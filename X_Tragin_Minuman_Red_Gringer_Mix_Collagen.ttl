@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:X_Tragin_Minuman_Red_Gringer_Mix_Collagen a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1241";
+	rdfs:label "x'tragin minuman red gringer mix collagen";
+	gr:hasManufacturer halalm:22_Drinks .
+
+halalf:X_Tragin_Minuman_Red_Gringer_Mix_Collagen foodlirmm:certificate halalc:03120025530619 .
+
+halalf:X_Tragin_Minuman_Red_Gringer_Mix_Collagen food:containsIngredient halali:gula,halali:jahe_merah,halali:collagen,halali:ekstrak_sereh,halali:ekstrak_kulit_manggis,halali:ekstrak_madu,halali:vitamin_c .
+
+halalf:X_Tragin_Minuman_Red_Gringer_Mix_Collagen food:ingredientsListAsText "gula", "jahe merah", "collagen", "ekstrak sereh", "ekstrak kulit manggis", "ekstrak madu", "vitamin c" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Tokpoki_Korean_Rice_Cake_Sauce a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1001";
+	rdfs:label "tokpoki korean rice cake sauce";
+	gr:hasManufacturer halalm:Pt_Jinyoung .
+
+halalf:Tokpoki_Korean_Rice_Cake_Sauce foodlirmm:certificate halalc:00100077790616 .
+
+halalf:Tokpoki_Korean_Rice_Cake_Sauce food:containsIngredient halali:sirup_jagung_tinggi_fruktosa,halali:saus_kacang_kedelai,halali:pewarna_alami_karamel_iii_amonia_proses,halali:air,halali:gula_merah,halali:pewarna_alami_karamel_i_plain,halali:cabai_merah_bubuk,halali:gula,halali:penguat_rasa_mononatrium_lglutamat,halali:tepung_terigu,halali:garam,halali:bawang_putih_bubuk,halali:bawang_bombay_bubuk,halali:perisa_alami,halali:lada_hitam_bubuk,halali:pengawet_natrium_benzoat .
+
+halalf:Tokpoki_Korean_Rice_Cake_Sauce food:ingredientsListAsText "sirup jagung tinggi fruktosa", "saus kacang kedelai", "pewarna alami karamel iii amonia proses", "air", "gula merah", "pewarna alami karamel i plain", "cabai merah bubuk", "gula", "penguat rasa mononatrium l-glutamat", "tepung terigu", "garam", "bawang putih bubuk", "bawang bombay bubuk", "perisa alami", "lada hitam bubuk", "pengawet natrium benzoat" .
+

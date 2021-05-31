@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Taro_Snack_Net_Seaweed a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "779";
+	rdfs:label "taro snack net seaweed";
+	gr:hasManufacturer halalm:Pt_Aloha_Snack_Unggul .
+
+halalf:Taro_Snack_Net_Seaweed foodlirmm:certificate halalc:01101075380812 .
+
+halalf:Taro_Snack_Net_Seaweed food:containsIngredient halali:tepung_terigu,halali:minyak_nabati,halali:tapioka,halali:bumbu_rasa_rumput_laut,halali:penguat_rasa_mononatrium_glutamat,halali:dinatrium_inosinat,halali:guanilat,halali:rumput_laut_kering,halali:perisa_identik_alami_rumput_laut,halali:hidrolisa_protein_nabati,halali:pewarna_karamel_kelas_ie_a,halali:gula,halali:garam,halali:pengembang .
+
+halalf:Taro_Snack_Net_Seaweed food:ingredientsListAsText "tepung terigu", "minyak nabati", "tapioka", "bumbu rasa rumput laut", "penguat rasa mononatrium glutamat", "dinatrium inosinat", "guanilat", "rumput laut kering", "perisa identik alami rumput laut", "hidrolisa protein nabati", "pewarna karamel kelas ie a", "gula", "garam", "pengembang" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Zee_Susu_Bubuk_Instant_Vanilla_Twist a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "973";
+	rdfs:label "zee susu bubuk instant vanilla twist";
+	gr:hasManufacturer halalm:Pt_Frisian_Flag_Indonesia .
+
+halalf:Zee_Susu_Bubuk_Instant_Vanilla_Twist foodlirmm:certificate halalc:00040040520606 .
+
+halalf:Zee_Susu_Bubuk_Instant_Vanilla_Twist food:containsIngredient halali:susu_bubuk_full_krim,halali:sukrosa,halali:maltodekstrin,halali:krimer_nabati,halali:susu_skim_bubuk,halali:perisa_artifisial_vanili,halali:perisa_identik_alami_susu,halali:bifidobacterium_longum,halali:mineral,halali:vitamin .
+
+halalf:Zee_Susu_Bubuk_Instant_Vanilla_Twist food:ingredientsListAsText "susu bubuk full krim", "sukrosa", "maltodekstrin", "krimer nabati", "susu skim bubuk", "perisa artifisial vanili", "perisa identik alami susu", "bifidobacterium longum", "mineral", "vitamin" .
+

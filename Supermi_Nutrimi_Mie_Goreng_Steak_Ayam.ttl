@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Supermi_Nutrimi_Mie_Goreng_Steak_Ayam a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "468";
+	rdfs:label "supermi nutrimi mie goreng steak ayam";
+	gr:hasManufacturer halalm:Cv_Deris .
+
+halalf:Supermi_Nutrimi_Mie_Goreng_Steak_Ayam foodlirmm:certificate halalc:00340116240321 .
+
+halalf:Supermi_Nutrimi_Mie_Goreng_Steak_Ayam food:containsIngredient halali:tepung_terigu,halali:minyak_nabati,halali:garam,halali:brokoli_bubuk,halali:penstabil,halali:nabati,halali:fosfat,halali:pengatur_keasaman,halali:pewarna_alami_klorofilin_tembaga_kompleks_ci,halali:mineral,halali:zat_besi,halali:antioksidan_tbhq,halali:gula,halali:garam,halali:ayam_bubuk,halali:tomat_bubuk,halali:bawang_putih_bubuk,halali:jamur_bubuk,halali:ekstrak_ragi,halali:lada_bubuk,halali:vitamin_a,halali:vitamin_b,halali:vitamin_b,halali:vitamin_b,halali:niasin,halali:asam_folat,halali:pantotenat .
+
+halalf:Supermi_Nutrimi_Mie_Goreng_Steak_Ayam food:ingredientsListAsText "tepung terigu", "minyak nabati", "garam", "brokoli bubuk", "penstabil", "nabati", "fosfat", "pengatur keasaman", "pewarna alami klorofilin tembaga kompleks ci", "mineral", "zat besi", "antioksidan tbhq", "gula", "garam", "ayam bubuk", "tomat bubuk", "bawang putih bubuk", "jamur bubuk", "ekstrak ragi", "lada bubuk", "vitamin a", "vitamin b", "vitamin b", "vitamin b", "niasin", "asam folat", "pantotenat" .
+

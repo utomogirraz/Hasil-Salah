@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Wrp_Diet_Cookies_Flake_Chocolate_Chips a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "771";
+	rdfs:label "wrp diet cookies flake chocolate chips";
+	gr:hasManufacturer halalm:Pt_Pancamitra_Kreasi_Kulina .
+
+halalf:Wrp_Diet_Cookies_Flake_Chocolate_Chips foodlirmm:certificate halalc:00160108031020 .
+
+halalf:Wrp_Diet_Cookies_Flake_Chocolate_Chips food:containsIngredient halali:susu_bubuk_skim,halali:susu_bubuk_full_krim,halali:gula,halali:protein_whey,halali:bubuk_cokelat,halali:krimer_nabati,halali:serat_inulin,halali:premiks_vitamin,halali:mineral,halali:pemanis_buatan,halali:terigu,halali:margarin,halali:sukrosa,halali:corn_flakes,halali:oat_fiber,halali:telur,halali:mentega,halali:pati,halali:cokelat_bubuk,halali:bahan_pengembang,halali:pengemulsi_nabati,halali:pengawet_kalium_sorbat .
+
+halalf:Wrp_Diet_Cookies_Flake_Chocolate_Chips food:ingredientsListAsText "susu bubuk skim", "susu bubuk full krim", "gula", "protein whey", "bubuk cokelat", "krimer nabati", "serat inulin", "premiks vitamin", "mineral", "pemanis buatan", "terigu", "margarin", "sukrosa", "corn flakes", "oat fiber", "telur", "mentega", "pati", "cokelat bubuk", "bahan pengembang", "pengemulsi nabati", "pengawet kalium sorbat" .
+

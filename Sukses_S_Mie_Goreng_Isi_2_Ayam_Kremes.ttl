@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Sukses_S_Mie_Goreng_Isi_2_Ayam_Kremes a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "492";
+	rdfs:label "sukses's mie goreng isi 2 ayam kremes";
+	gr:hasManufacturer halalm:Ppkoppwr_Ayam_Goreng_Kremes_Bu_Narmi_Agil_2 .
+
+halalf:Sukses_S_Mie_Goreng_Isi_2_Ayam_Kremes foodlirmm:certificate halalc:15330037300419 .
+
+halalf:Sukses_S_Mie_Goreng_Isi_2_Ayam_Kremes food:containsIngredient halali:komposisi_tepung_terigu,halali:minyak_sayur,halali:garam,halali:pengental_nabati,halali:pengatur_keasaman,halali:pewarta,halali:tartrazin_ci,halali:gula,halali:garam,halali:penguat_rasa,halali:bubuk_bawang_putih,halali:perisa_artifisial_ayam,halali:bubuk_lada,halali:ektrak_ayam_bubuk_cabai,halali:minyak_sayur,halali:bawang_merah,halali:kecap_manis .
+
+halalf:Sukses_S_Mie_Goreng_Isi_2_Ayam_Kremes food:ingredientsListAsText "komposisi tepung terigu", "minyak sayur", "garam", "pengental nabati", "pengatur keasaman", "pewarta", "tartrazin ci", "gula", "garam", "penguat rasa", "bubuk bawang putih", "perisa artifisial ayam", "bubuk lada", "ektrak ayam bubuk cabai", "minyak sayur", "bawang merah", "kecap manis" .
+
