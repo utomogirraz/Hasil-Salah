@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Oishi_Snack_Pillows_Chocolate a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "598";
+	rdfs:label "oishi snack pillows chocolate";
+	gr:hasManufacturer halalm:Emmh_Snack_Indonesia .
+
+halalf:Oishi_Snack_Pillows_Chocolate foodlirmm:certificate halalc:07100071130120 .
+
+halalf:Oishi_Snack_Pillows_Chocolate food:containsIngredient halali:gula,halali:tepung_terigu,halali:beras,halali:minyak_nabati,halali:antioksidan_tbhq,halali:susu_bubuk,halali:cokelat_bubuk,halali:bubuk_whey,halali:garam,halali:pengemulsi,halali:lesitin_kedelai,halali:perisa_cokelat,halali:vanili .
+
+halalf:Oishi_Snack_Pillows_Chocolate food:ingredientsListAsText "gula", "tepung terigu", "beras", "minyak nabati", "antioksidan tbhq", "susu bubuk", "cokelat bubuk", "bubuk whey", "garam", "pengemulsi", "lesitin kedelai", "perisa cokelat", "vanili" .
+

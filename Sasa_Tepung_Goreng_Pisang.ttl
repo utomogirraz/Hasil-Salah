@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Sasa_Tepung_Goreng_Pisang a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "433";
+	rdfs:label "sasa tepung goreng pisang";
+	gr:hasManufacturer halalm:Pt_Ajinomoto_Indonesia .
+
+halalf:Sasa_Tepung_Goreng_Pisang foodlirmm:certificate halalc:00060008910908 .
+
+halalf:Sasa_Tepung_Goreng_Pisang food:containsIngredient halali:tepung_beras,halali:gula,halali:tepung_tapioka,halali:garam,halali:tepung_telur,halali:pengembang_natrium_bikarbonat,halali:perisa_artifisial,halali:penguat_rasa_dinatrium_inosinat,halali:guanilat .
+
+halalf:Sasa_Tepung_Goreng_Pisang food:ingredientsListAsText "tepung beras", "gula", "tepung tapioka", "garam", "tepung telur", "pengembang natrium bikarbonat", "perisa artifisial", "penguat rasa dinatrium inosinat", "guanilat" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Sedaap_Mie_Instant_Soto a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "675";
+	rdfs:label "sedaap mie instant soto";
+	gr:hasManufacturer halalm:Cv_Berkah .
+
+halalf:Sedaap_Mie_Instant_Soto foodlirmm:certificate halalc:15160022971016 .
+
+halalf:Sedaap_Mie_Instant_Soto food:containsIngredient halali:wheat_flour,halali:refined_palm_oil,halali:tapioca_starch,halali:garam,halali:acidity_regulator,halali:thickener,halali:colour,halali:ferrous_fumarate,halali:for_fortification_of_iron,halali:sugar,halali:garam,halali:flavour_enhancer,halali:artificial_chicken_flavour_powder,halali:pepper_powder,halali:garlic_powder,halali:dried_leek,halali:refined_palm_oil,halali:soto_ingredients,halali:garlic,halali:onion,halali:lemongrass,halali:kaffir_lime_leaf,halali:delicious_powder,halali:garlic,halali:tapioca_starch,halali:dried_leek,halali:dried_carrot .
+
+halalf:Sedaap_Mie_Instant_Soto food:ingredientsListAsText "wheat flour", "refined palm oil", "tapioca starch", "garam", "acidity regulator", "thickener", "colour", "ferrous fumarate", "for fortification of iron", "sugar", "garam", "flavour enhancer", "artificial chicken flavour powder", "pepper powder", "garlic powder", "dried leek", "refined palm oil", "soto ingredients", "garlic", "onion", "lemongrass", "kaffir lime leaf", "delicious powder", "garlic", "tapioca starch", "dried leek", "dried carrot" .
+

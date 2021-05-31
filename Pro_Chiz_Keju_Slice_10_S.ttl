@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Pro_Chiz_Keju_Slice_10_S a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1277";
+	rdfs:label "pro chiz keju slice 10's";
+	gr:hasManufacturer halalm:Esthree .
+
+halalf:Pro_Chiz_Keju_Slice_10_S foodlirmm:certificate halalc:15160029640418 .
+
+halalf:Pro_Chiz_Keju_Slice_10_S food:containsIngredient halali:water,halali:cheddar_cheese,halali:vegetable_oil,halali:thickener_acid_treated_starch,halali:emulsifiers,halali:sodium_citrate,halali:disodium_phosphate,halali:sodium_heksamethaphosphate,halali:garam,halali:acidity_regulator_lactic_acid,halali:natural_cheese_flavour,halali:preservatives,halali:potassium_sorbate,halali:nisin,halali:coloring_annatto_cl .
+
+halalf:Pro_Chiz_Keju_Slice_10_S food:ingredientsListAsText "water", "cheddar cheese", "vegetable oil", "thickener acid treated starch", "emulsifiers", "sodium citrate", "disodium phosphate", "sodium heksamethaphosphate", "garam", "acidity regulator lactic acid", "natural cheese flavour", "preservatives", "potassium sorbate", "nisin", "coloring annatto cl" .
+

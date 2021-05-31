@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Picnic_Dodol_Garut a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1218";
+	rdfs:label "picnic dodol garut";
+	gr:hasManufacturer halalm:Paten .
+
+halalf:Picnic_Dodol_Garut foodlirmm:certificate halalc:09100011711019 .
+
+halalf:Picnic_Dodol_Garut food:containsIngredient halali:gula_pasir,halali:tepung_ketan,halali:santan_kelapa,halali:gula_merah,halali:lemak_sapi,halali:minyak_sayur,halali:tepung_terigu,halali:cokelat,halali:susu,halali:garam,halali:mentega,halali:vanili .
+
+halalf:Picnic_Dodol_Garut food:ingredientsListAsText "gula pasir", "tepung ketan", "santan kelapa", "gula merah", "lemak sapi", "minyak sayur", "tepung terigu", "cokelat", "susu", "garam", "mentega", "vanili" .
+

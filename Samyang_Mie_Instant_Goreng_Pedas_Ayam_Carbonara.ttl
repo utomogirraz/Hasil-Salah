@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Samyang_Mie_Instant_Goreng_Pedas_Ayam_Carbonara a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "523";
+	rdfs:label "samyang mie instant goreng pedas ayam carbonara";
+	gr:hasManufacturer halalm:Delta_Aerosupport_Pt .
+
+halalf:Samyang_Mie_Instant_Goreng_Pedas_Ayam_Carbonara foodlirmm:certificate halalc:15160024850517 .
+
+halalf:Samyang_Mie_Instant_Goreng_Pedas_Ayam_Carbonara food:containsIngredient halali:tepung_gandum,halali:pati_tapioka_termodifikasi,halali:minyak_goreng_kelapa_sawit,halali:pati_kentang_termodifikasi,halali:tepung_gluten,halali:garam,halali:ekstra_bawang_bombay,halali:pengatur_keasaman,halali:asam_sitrat,halali:penstabil_gom_guar,halali:pewarna_riboflavin,halali:perisa_alami_teh_hijau,halali:air,halali:bumbu_rasa_ayam,halali:kecap_gula,halali:lada_merah,halali:ekstrak_cabai,halali:minyak_kedelai,halali:bawang_bombay,halali:bawang_putih,halali:pati_kentang_termodifikasi,halali:ekstrak_paprika,halali:lada_hitam_bubuk,halali:kari_bubuk,halali:bumbu_rasa_kari_ayam,halali:susu_bubuk,halali:gula,halali:garam .
+
+halalf:Samyang_Mie_Instant_Goreng_Pedas_Ayam_Carbonara food:ingredientsListAsText "tepung gandum", "pati tapioka termodifikasi", "minyak goreng kelapa sawit", "pati kentang termodifikasi", "tepung gluten", "garam", "ekstra bawang bombay", "pengatur keasaman", "asam sitrat", "penstabil gom guar", "pewarna riboflavin", "perisa alami teh hijau", "air", "bumbu rasa ayam", "kecap gula", "lada merah", "ekstrak cabai", "minyak kedelai", "bawang bombay", "bawang putih", "pati kentang termodifikasi", "ekstrak paprika", "lada hitam bubuk", "kari bubuk", "bumbu rasa kari ayam", "susu bubuk", "gula", "garam" .
+

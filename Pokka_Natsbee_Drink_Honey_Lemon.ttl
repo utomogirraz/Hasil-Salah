@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Pokka_Natsbee_Drink_Honey_Lemon a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1005";
+	rdfs:label "pokka natsbee drink honey lemon";
+	gr:hasManufacturer halalm:Madu_Lebah_Rayyan .
+
+halalf:Pokka_Natsbee_Drink_Honey_Lemon foodlirmm:certificate halalc:02220016991120 .
+
+halalf:Pokka_Natsbee_Drink_Honey_Lemon food:containsIngredient halali:air,halali:gula,halali:pengatur_keasaman,halali:asam_sitrat,halali:natrium_sitrat,halali:asam_askorbat,halali:lemon_bubuk,halali:bubuk_madu,halali:perisa_sintetik_lemon,halali:madu .
+
+halalf:Pokka_Natsbee_Drink_Honey_Lemon food:ingredientsListAsText "air", "gula", "pengatur keasaman", "asam sitrat", "natrium sitrat", "asam askorbat", "lemon bubuk", "bubuk madu", "perisa sintetik lemon", "madu" .
+

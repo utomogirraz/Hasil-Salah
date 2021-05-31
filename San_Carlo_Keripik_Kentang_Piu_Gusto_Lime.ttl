@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:San_Carlo_Keripik_Kentang_Piu_Gusto_Lime a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1066";
+	rdfs:label "san carlo keripik kentang piu gusto lime";
+	gr:hasManufacturer halalm:Laasania .
+
+halalf:San_Carlo_Keripik_Kentang_Piu_Gusto_Lime foodlirmm:certificate halalc:15100044111219 .
+
+halalf:San_Carlo_Keripik_Kentang_Piu_Gusto_Lime food:containsIngredient halali:kentang,halali:minyak_nabati,halali:bumbu_lemon,halali:lada,halali:gula,halali:penguat_rasa,halali:mononatrium_lglutamat,halali:ekstrak_ragi,halali:pengatur_keasaman,halali:natrium_asetat,halali:asam_sitrat,halali:kalium_sitrat,halali:lada_bubuk,halali:bawang_merah_bubuk,halali:jeruk_nipis_bubuk,halali:garam .
+
+halalf:San_Carlo_Keripik_Kentang_Piu_Gusto_Lime food:ingredientsListAsText "kentang", "minyak nabati", "bumbu lemon", "lada", "gula", "penguat rasa", "mononatrium l-glutamat", "ekstrak ragi", "pengatur keasaman", "natrium asetat", "asam sitrat", "kalium sitrat", "lada bubuk", "bawang merah bubuk", "jeruk nipis bubuk", "garam" .
+

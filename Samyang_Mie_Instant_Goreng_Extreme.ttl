@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Samyang_Mie_Instant_Goreng_Extreme a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "697";
+	rdfs:label "samyang mie instant goreng extreme";
+	gr:hasManufacturer halalm:Makmur_Pangan_Lestari .
+
+halalf:Samyang_Mie_Instant_Goreng_Extreme foodlirmm:certificate halalc:01101226010419 .
+
+halalf:Samyang_Mie_Instant_Goreng_Extreme food:containsIngredient halali:tepung_gandum,halali:pati_tapioka_termodifikasi,halali:minyak_goreng_kelapa_sawit,halali:tepung_gluten,halali:garam,halali:penstabil_gom_guar,halali:perisa_sintetik_teh_hijau,halali:pengatur_keasaman,halali:asam_sitrat,halali:pewarna_ribofalvin,halali:air,halali:ekstrak_cabai,halali:lada_merah,halali:gula,halali:kecap,halali:bumbu_rasa_ayam,halali:minyak_kedelai,halali:bumbu_rasa_kari_ayam,halali:bawang_bombay,halali:bawang_putih,halali:lada_hitam_bubuk,halali:ekstrak_paprika,halali:pati_termodifikasi .
+
+halalf:Samyang_Mie_Instant_Goreng_Extreme food:ingredientsListAsText "tepung gandum", "pati tapioka termodifikasi", "minyak goreng kelapa sawit", "tepung gluten", "garam", "penstabil gom guar", "perisa sintetik teh hijau", "pengatur keasaman", "asam sitrat", "pewarna ribofalvin", "air", "ekstrak cabai", "lada merah", "gula", "kecap", "bumbu rasa ayam", "minyak kedelai", "bumbu rasa kari ayam", "bawang bombay", "bawang putih", "lada hitam bubuk", "ekstrak paprika", "pati termodifikasi" .
+

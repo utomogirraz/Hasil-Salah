@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Potabee_Snack_Potato_Chips_Melted_Cheese a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "951";
+	rdfs:label "potabee snack potato chips melted cheese";
+	gr:hasManufacturer halalm:Berkah_Snack .
+
+halalf:Potabee_Snack_Potato_Chips_Melted_Cheese foodlirmm:certificate halalc:00100088360418 .
+
+halalf:Potabee_Snack_Potato_Chips_Melted_Cheese food:containsIngredient halali:kentang,halali:minyak_kelapa_sawit,halali:minyak_inti_kelapa_sawit_terhidrogenasi,halali:whey_bubuk,halali:keju_bubuk,halali:susu_bubuk_full_cream,halali:garam,halali:penguat_rasa,halali:pewarna_kuning_fcf_ci .
+
+halalf:Potabee_Snack_Potato_Chips_Melted_Cheese food:ingredientsListAsText "kentang", "minyak kelapa sawit", "minyak inti kelapa sawit terhidrogenasi", "whey bubuk", "keju bubuk", "susu bubuk full cream", "garam", "penguat rasa", "pewarna kuning fcf ci" .
+

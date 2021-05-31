@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Roma_Biscuit_Susu_Selai_Slai_O_Lai_Strawberry a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1244";
+	rdfs:label "roma biscuit susu+selai slai o'lai strawberry";
+	gr:hasManufacturer halalm:Pt_Unimos .
+
+halalf:Roma_Biscuit_Susu_Selai_Slai_O_Lai_Strawberry foodlirmm:certificate halalc:00100083330617 .
+
+halalf:Roma_Biscuit_Susu_Selai_Slai_O_Lai_Strawberry food:containsIngredient halali:tepung_terigu,halali:minyak_nabati,halali:gula,halali:glukosa,halali:fruktosa,halali:gliserin,halali:puree_apel,halali:susu_bubuk,halali:garam,halali:pengemulsi_lesitin_kedelai,halali:pengatur_keasaman,halali:penstabil_nabati,halali:pengembang,halali:kalsium_karbonat,halali:konsentrat_stroberi,halali:perisa_sintetik,halali:pewarna_makanan,halali:premiks_vitamin .
+
+halalf:Roma_Biscuit_Susu_Selai_Slai_O_Lai_Strawberry food:ingredientsListAsText "tepung terigu", "minyak nabati", "gula", "glukosa", "fruktosa", "gliserin", "puree apel", "susu bubuk", "garam", "pengemulsi lesitin kedelai", "pengatur keasaman", "penstabil nabati", "pengembang", "kalsium karbonat", "konsentrat stroberi", "perisa sintetik", "pewarna makanan", "premiks vitamin" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Potabee_Snack_Potato_Chips_Bbq a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "633";
+	rdfs:label "potabee snack potato chips bbq";
+	gr:hasManufacturer halalm:Rdmk_Hana_Snack .
+
+halalf:Potabee_Snack_Potato_Chips_Bbq foodlirmm:certificate halalc:15100026040817 .
+
+halalf:Potabee_Snack_Potato_Chips_Bbq food:containsIngredient halali:kentang,halali:minyak_kelapa_sawit,halali:antioksidan_butil_hidrokinon_tersier/tbhq,halali:perisa_identik_alami_sapi_panggang,halali:penguat_rasa,halali:mononatrium_glutamat,halali:dinatrium__ribonukleotida,halali:ekstrak_daging_sapi,halali:bubuk_lada_hitam .
+
+halalf:Potabee_Snack_Potato_Chips_Bbq food:ingredientsListAsText "kentang", "minyak kelapa sawit", "antioksidan butil hidrokinon tersier/tbhq", "perisa identik alami sapi panggang", "penguat rasa", "mononatrium glutamat", "dinatrium '- ribonukleotida", "ekstrak daging sapi", "bubuk lada hitam" .
+

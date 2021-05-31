@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Oishi_Snack_Sponge_Crunch_Strawberry a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "916";
+	rdfs:label "oishi snack sponge crunch strawberry";
+	gr:hasManufacturer halalm:Emmh_Snack_Indonesia .
+
+halalf:Oishi_Snack_Sponge_Crunch_Strawberry foodlirmm:certificate halalc:07100071130120 .
+
+halalf:Oishi_Snack_Sponge_Crunch_Strawberry food:containsIngredient halali:jagung,halali:lemak_nabati,halali:gula,halali:whey_bubuk,halali:susu_bubuk,halali:krimer_nabati,halali:tepung_beras,halali:tepung_kentang,halali:pengemulsi,halali:lesitin_kedelai,halali:perisa_artifisial_stroberi,halali:ekstrak_stroberi,halali:pewarna_makanan,halali:merah_allura_ci,halali:eritrosin_cl .
+
+halalf:Oishi_Snack_Sponge_Crunch_Strawberry food:ingredientsListAsText "jagung", "lemak nabati", "gula", "whey bubuk", "susu bubuk", "krimer nabati", "tepung beras", "tepung kentang", "pengemulsi", "lesitin kedelai", "perisa artifisial stroberi", "ekstrak stroberi", "pewarna makanan", "merah allura ci", "eritrosin cl" .
+
