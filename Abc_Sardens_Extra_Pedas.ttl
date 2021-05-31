@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Abc_Sardens_Extra_Pedas a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1037";
+	rdfs:label "abc sardens extra pedas";
+	gr:hasManufacturer halalm:Pt_Magfood_Inovasi_Pangan .
+
+halalf:Abc_Sardens_Extra_Pedas foodlirmm:certificate halalc:00060036430805 .
+
+halalf:Abc_Sardens_Extra_Pedas food:containsIngredient halali:ikan_sarden,halali:saus_cabai,halali:penguat_rasa_mononatrium_glutamat,halali:gula,halali:bawang_putih,halali:bawang_bombay,halali:garam,halali:cabai_rawit .
+
+halalf:Abc_Sardens_Extra_Pedas food:ingredientsListAsText "ikan sarden", "saus cabai", "penguat rasa mononatrium glutamat", "gula", "bawang putih", "bawang bombay", "garam", "cabai rawit" .
+

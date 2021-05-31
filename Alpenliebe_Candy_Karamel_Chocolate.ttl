@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Alpenliebe_Candy_Karamel_Chocolate a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1060";
+	rdfs:label "alpenliebe candy karamel chocolate";
+	gr:hasManufacturer halalm:Pt_Nutrifood_Indonesia .
+
+halalf:Alpenliebe_Candy_Karamel_Chocolate foodlirmm:certificate halalc:00110084410817 .
+
+halalf:Alpenliebe_Candy_Karamel_Chocolate food:containsIngredient halali:gula,halali:cokelat_hitam,halali:sirup_glukosa,halali:susu_kental_manis,halali:dekstrosa,halali:susu_skim_bubuk,halali:garam,halali:pengental_nabati,halali:perisa_sintetik,halali:minyak_trgiguserida_rantai_se,halali:g,halali:maltodekstrin,halali:minyak_nabati,halali:pengemulsi_nabati .
+
+halalf:Alpenliebe_Candy_Karamel_Chocolate food:ingredientsListAsText "gula", "cokelat hitam", "sirup glukosa", "susu kental manis", "dekstrosa", "susu skim bubuk", "garam", "pengental nabati", "perisa sintetik", "minyak trgiguserida rantai se", "g", "maltodekstrin", "minyak nabati", "pengemulsi nabati" .
+

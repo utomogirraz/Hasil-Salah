@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Anmum_Susu_Bubuk_Ibu_Hamil_Materna_Strawberry_White_Cokelat a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1119";
+	rdfs:label "anmum susu bubuk ibu hamil materna strawberry white cokelat";
+	gr:hasManufacturer halalm:Pt_Sanghiang_Perkasa .
+
+halalf:Anmum_Susu_Bubuk_Ibu_Hamil_Materna_Strawberry_White_Cokelat foodlirmm:certificate halalc:00040011611299 .
+
+halalf:Anmum_Susu_Bubuk_Ibu_Hamil_Materna_Strawberry_White_Cokelat food:containsIngredient halali:susu_bubuk_tanpa_lemak,halali:susu_bubuk,halali:sukrosa,halali:serat_pangan_inulin,halali:lemak_susu,halali:kalsium_karbonat,halali:premiks_mineral,halali:bubuk_dha,halali:perisa_sintetik_stroberi,halali:cokelat_putih,halali:premiks_vitamin,halali:bubuk_stroberi,halali:pewarna_alami_karmin_clno .
+
+halalf:Anmum_Susu_Bubuk_Ibu_Hamil_Materna_Strawberry_White_Cokelat food:ingredientsListAsText "susu bubuk tanpa lemak", "susu bubuk", "sukrosa", "serat pangan inulin", "lemak susu", "kalsium karbonat", "premiks mineral", "bubuk dha", "perisa sintetik stroberi", "cokelat putih", "premiks vitamin", "bubuk stroberi", "pewarna alami karmin clno" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Agar_Rasa_Agar_Agar_Powder_Coklat a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "584";
+	rdfs:label "agar rasa agar agar powder coklat";
+	gr:hasManufacturer halalm:Cv_La_G_Gandum .
+
+halalf:Agar_Rasa_Agar_Agar_Powder_Coklat foodlirmm:certificate halalc:17210048270519 .
+
+halalf:Agar_Rasa_Agar_Agar_Powder_Coklat food:containsIngredient halali:cokelat_bubuk,halali:agar_bubuk,halali:karagen,halali:konnyaku_bubuk,halali:susu_bubuk,halali:pengatur_keasaman,halali:kalium_sitrat,halali:gula .
+
+halalf:Agar_Rasa_Agar_Agar_Powder_Coklat food:ingredientsListAsText "cokelat bubuk", "agar bubuk", "karagen", "konnyaku bubuk", "susu bubuk", "pengatur keasaman", "kalium sitrat", "gula" .
+

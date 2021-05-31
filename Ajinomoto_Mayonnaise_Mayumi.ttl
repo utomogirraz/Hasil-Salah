@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Ajinomoto_Mayonnaise_Mayumi a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "933";
+	rdfs:label "ajinomoto mayonnaise mayumi";
+	gr:hasManufacturer halalm:Pt_Ajinomoto_Indonesia .
+
+halalf:Ajinomoto_Mayonnaise_Mayumi foodlirmm:certificate halalc:00060008910908 .
+
+halalf:Ajinomoto_Mayonnaise_Mayumi food:containsIngredient halali:minyak_nabati,halali:air,halali:gula,halali:kuning_telur,halali:garam,halali:cuka,halali:penguat_rasa,halali:mononatrium_glutamat,halali:dinatrium_inosinat,halali:mustard,halali:pengatur_keasaman,halali:asam_sitrat,halali:pengental,halali:gom_xantan,halali:bawang_merah,halali:bawang_putih,halali:pengawet,halali:kalium_sorbat,halali:sekuestran,halali:kalsium_dinatrium_edta_kadar_lemak .
+
+halalf:Ajinomoto_Mayonnaise_Mayumi food:ingredientsListAsText "minyak nabati", "air", "gula", "kuning telur", "garam", "cuka", "penguat rasa", "mononatrium glutamat", "dinatrium inosinat", "mustard", "pengatur keasaman", "asam sitrat", "pengental", "gom xantan", "bawang merah", "bawang putih", "pengawet", "kalium sorbat", "sekuestran", "kalsium dinatrium edta kadar lemak" .
+

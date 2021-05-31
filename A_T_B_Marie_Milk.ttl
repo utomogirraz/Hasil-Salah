@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:A_T_B_Marie_Milk a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1026";
+	rdfs:label "a.t.b marie milk";
+	gr:hasManufacturer halalm:Julieac_A_A_C_S_Manufacturing_Sdn_Bhd .
+
+halalf:A_T_B_Marie_Milk foodlirmm:certificate halalc:00100084210817 .
+
+halalf:A_T_B_Marie_Milk food:containsIngredient halali:tepung_terigu,halali:gula,halali:minyak_tumbuhtumbuhan,halali:tepung_susu,halali:tepung_telur,halali:garam,halali:amonium_bikarbonat,halali:natrium_bikarbonat,halali:vanili .
+
+halalf:A_T_B_Marie_Milk food:ingredientsListAsText "tepung terigu", "gula", "minyak tumbuh-tumbuhan", "tepung susu", "tepung telur", "garam", "amonium bikarbonat", "natrium bikarbonat", "vanili" .
+

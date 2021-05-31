@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Abc_Syrup_Squash_Delight_Orange a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "892";
+	rdfs:label "abc syrup squash delight orange";
+	gr:hasManufacturer halalm:Gambino_Coffee .
+
+halalf:Abc_Syrup_Squash_Delight_Orange foodlirmm:certificate halalc:00120088760518 .
+
+halalf:Abc_Syrup_Squash_Delight_Orange food:containsIngredient halali:air,halali:gula,halali:perisa_leci,halali:pengatur_keasaman,halali:pemanis_buatan_natrium_siklamat__g/kg_minuman_siap_saji,halali:pengawet_natrium_benzoat,halali:sari_buah_jeruk,halali:antioksidan_vitamin_c .
+
+halalf:Abc_Syrup_Squash_Delight_Orange food:ingredientsListAsText "air", "gula", "perisa leci", "pengatur keasaman", "pemanis buatan natrium siklamat  g/kg minuman siap saji", "pengawet natrium benzoat", "sari buah jeruk", "antioksidan vitamin c" .
+

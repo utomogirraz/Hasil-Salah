@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Bakalland_Crunchy_Muesli_5_Forest_Fruits_Honey a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1268";
+	rdfs:label "bakalland crunchy muesli 5 forest fruits,honey";
+	gr:hasManufacturer halalm:Ud_Madu_Mandiri .
+
+halalf:Bakalland_Crunchy_Muesli_5_Forest_Fruits_Honey foodlirmm:certificate halalc:3_SPKP_MUI_JATIM_6 .
+
+halalf:Bakalland_Crunchy_Muesli_5_Forest_Fruits_Honey food:containsIngredient halali:oat_serpihan,halali:gandum_serpihan,halali:gula,halali:madu,halali:manisan_cranberry,halali:minyak_kelapa_sawit,halali:tepung_beras,halali:tepung_jagung,halali:tepung_oat,halali:raspberry_kering,halali:bluberi_kering,halali:beri_hitam_kering,halali:red_current_kering,halali:pengemulsi_lesitin_nabati,halali:minyak_biji_bunga_matahari,halali:garam,halali:perisa_alami .
+
+halalf:Bakalland_Crunchy_Muesli_5_Forest_Fruits_Honey food:ingredientsListAsText "oat serpihan", "gandum serpihan", "gula", "madu", "manisan cranberry", "minyak kelapa sawit", "tepung beras", "tepung jagung", "tepung oat", "raspberry kering", "bluberi kering", "beri hitam kering", "red current kering", "pengemulsi lesitin nabati", "minyak biji bunga matahari", "garam", "perisa alami" .
+

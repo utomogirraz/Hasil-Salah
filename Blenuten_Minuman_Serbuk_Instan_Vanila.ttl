@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Blenuten_Minuman_Serbuk_Instan_Vanila a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "273";
+	rdfs:label "blenuten minuman serbuk instan vanila";
+	gr:hasManufacturer halalm:Tazakka .
+
+halalf:Blenuten_Minuman_Serbuk_Instan_Vanila foodlirmm:certificate halalc:15120037590519 .
+
+halalf:Blenuten_Minuman_Serbuk_Instan_Vanila food:containsIngredient halali:maltodekstrin,halali:sukrosa,halali:minyak_nabati,halali:protein_whey,halali:trigliserida_rantai_se,halali:g,halali:mineral_premiks,halali:fruktooligosakarida,halali:perisa_sintetik,halali:pengemulsi,halali:minyak_ikan,halali:premiks_vitamin,halali:laktat_ferments .
+
+halalf:Blenuten_Minuman_Serbuk_Instan_Vanila food:ingredientsListAsText "maltodekstrin", "sukrosa", "minyak nabati", "protein whey", "trigliserida rantai se", "g", "mineral premiks", "fruktooligosakarida", "perisa sintetik", "pengemulsi", "minyak ikan", "premiks vitamin", "laktat ferments" .
+

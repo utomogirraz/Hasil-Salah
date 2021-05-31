@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Caffino_Kopi_Instant_3_In_1_Classic a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "393";
+	rdfs:label "caffino kopi instant 3 in 1 classic";
+	gr:hasManufacturer halalm:Ppkopclp_Hijrah .
+
+halalf:Caffino_Kopi_Instant_3_In_1_Classic foodlirmm:certificate halalc:15120071240321 .
+
+halalf:Caffino_Kopi_Instant_3_In_1_Classic food:containsIngredient halali:gula,halali:krimer_minuman,halali:kopi_bubuk_instant,halali:susu_skim_bubuk,halali:karamel_bubuk,halali:perisa_sintetik_vanili,halali:garam,halali:pemanis_alami_glikosida_steviol .
+
+halalf:Caffino_Kopi_Instant_3_In_1_Classic food:ingredientsListAsText "gula", "krimer minuman", "kopi bubuk instant", "susu skim bubuk", "karamel bubuk", "perisa sintetik vanili", "garam", "pemanis alami glikosida steviol" .
+

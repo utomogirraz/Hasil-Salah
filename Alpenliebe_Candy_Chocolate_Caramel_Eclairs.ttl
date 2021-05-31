@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Alpenliebe_Candy_Chocolate_Caramel_Eclairs a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "834";
+	rdfs:label "alpenliebe candy chocolate caramel eclairs";
+	gr:hasManufacturer halalm:Java_Bakery .
+
+halalf:Alpenliebe_Candy_Chocolate_Caramel_Eclairs foodlirmm:certificate halalc:15200037940619 .
+
+halalf:Alpenliebe_Candy_Chocolate_Caramel_Eclairs food:containsIngredient halali:sirup_glukosa,halali:gulam_cokelat_pasta,halali:susu_bubuk_lemak_nabati,halali:garam,halali:pengental_gum_arab,halali:pengemulsi_lesitin_kedelai,halali:perisa_artifisial_vanili .
+
+halalf:Alpenliebe_Candy_Chocolate_Caramel_Eclairs food:ingredientsListAsText "sirup glukosa", "gulam cokelat pasta", "susu bubuk lemak nabati", "garam", "pengental gum arab", "pengemulsi lesitin kedelai", "perisa artifisial vanili" .
+

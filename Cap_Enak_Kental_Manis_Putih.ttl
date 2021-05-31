@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Cap_Enak_Kental_Manis_Putih a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "935";
+	rdfs:label "cap enak kental manis putih";
+	gr:hasManufacturer halalm:Kecap_Zebra .
+
+halalf:Cap_Enak_Kental_Manis_Putih foodlirmm:certificate halalc:01061055581210 .
+
+halalf:Cap_Enak_Kental_Manis_Putih food:containsIngredient halali:gula,halali:susu_sapi,halali:minyak_nabati,halali:bubuk_whey,halali:buttermilk_bubuk,halali:maltodekstrin,halali:air,halali:susu_bubuk_skim,halali:garam,halali:laktosa,halali:perisa_identik_alami,halali:penstabil_nabati,halali:antioksidan_tokoferol,halali:vitamin_b,halali:a,halali:kolin,halali:vitamin_d .
+
+halalf:Cap_Enak_Kental_Manis_Putih food:ingredientsListAsText "gula", "susu sapi", "minyak nabati", "bubuk whey", "buttermilk bubuk", "maltodekstrin", "air", "susu bubuk skim", "garam", "laktosa", "perisa identik alami", "penstabil nabati", "antioksidan tokoferol", "vitamin b", "a", "kolin", "vitamin d" .
+

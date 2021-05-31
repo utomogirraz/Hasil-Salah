@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Budy_Jam_Selai_Stroberi a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "715";
+	rdfs:label "budy jam selai stroberi";
+	gr:hasManufacturer halalm:Bersama_Cipta_Mandiri_Pt .
+
+halalf:Budy_Jam_Selai_Stroberi foodlirmm:certificate halalc:01251001090405 .
+
+halalf:Budy_Jam_Selai_Stroberi food:containsIngredient halali:gula,halali:buah_stroberi,halali:glukosa,halali:air,halali:penstabil_pektin,halali:pengatur_keasaman,halali:asam_sitrat,halali:perisa_sintetik_stroberi,halali:pengawet_natrium_benzoat,halali:pengawet_kalium_sorbat,halali:pewarna_sintetik,halali:ponceau_r_ci,halali:biru_berlian_fcf_cu_no .
+
+halalf:Budy_Jam_Selai_Stroberi food:ingredientsListAsText "gula", "buah stroberi", "glukosa", "air", "penstabil pektin", "pengatur keasaman", "asam sitrat", "perisa sintetik stroberi", "pengawet natrium benzoat", "pengawet kalium sorbat", "pewarna sintetik", "ponceau r ci", "biru berlian fcf cu no" .
+
