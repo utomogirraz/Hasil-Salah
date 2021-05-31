@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Indomaret_Kacang_Kriuk a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "705";
+	rdfs:label "indomaret kacang kriuk";
+	gr:hasManufacturer halalm:Gangsar_Ud .
+
+halalf:Indomaret_Kacang_Kriuk foodlirmm:certificate halalc:07100025710415 .
+
+halalf:Indomaret_Kacang_Kriuk food:containsIngredient halali:kacang_tanah,halali:garam,halali:tepung_tapioka,halali:minyak_nabati,halali:bawang_putih,halali:bawang_merah,halali:gula,halali:ketumbar .
+
+halalf:Indomaret_Kacang_Kriuk food:ingredientsListAsText "kacang tanah", "garam", "tepung tapioka", "minyak nabati", "bawang putih", "bawang merah", "gula", "ketumbar" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Indomaret_Mix_Nuts a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "617";
+	rdfs:label "indomaret mix nuts";
+	gr:hasManufacturer halalm:Pt_Eka_Bogainti .
+
+halalf:Indomaret_Mix_Nuts foodlirmm:certificate halalc:00160048830908 .
+
+halalf:Indomaret_Mix_Nuts food:containsIngredient halali:kacang_koro,halali:kacang_tanah,halali:kacang_mede,halali:kacang_almond,halali:kacang_macadamia,halali:gula,halali:garam,halali:minyak_nabati,halali:tepung_tapioka,halali:bawang_putih,halali:daun_jeruk_purut,halali:ketumbar,halali:madu,halali:penguat_rasa_mononatrium_glutamat .
+
+halalf:Indomaret_Mix_Nuts food:ingredientsListAsText "kacang koro", "kacang tanah", "kacang mede", "kacang almond", "kacang macadamia", "gula", "garam", "minyak nabati", "tepung tapioka", "bawang putih", "daun jeruk purut", "ketumbar", "madu", "penguat rasa mononatrium glutamat" .
+

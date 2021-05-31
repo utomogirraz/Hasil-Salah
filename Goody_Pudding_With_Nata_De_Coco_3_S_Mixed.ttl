@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Goody_Pudding_With_Nata_De_Coco_3_S_Mixed a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "755";
+	rdfs:label "goody pudding with nata de coco 3's mixed";
+	gr:hasManufacturer halalm:Pt_Niramas_Utama .
+
+halalf:Goody_Pudding_With_Nata_De_Coco_3_S_Mixed foodlirmm:certificate halalc:00250009501298 .
+
+halalf:Goody_Pudding_With_Nata_De_Coco_3_S_Mixed food:containsIngredient halali:air,halali:nata_de_coco,halali:gula,halali:sari_buah_leci,halali:stroberi,halali:mangga,halali:susu_bubuk,halali:extraxt_rumput_laut,halali:asam_sitrat,halali:perisai_sintetik,halali:leci,halali:stroberi,halali:mangga,halali:pewarna,halali:tartrazin_ci__merah_allura_ci .
+
+halalf:Goody_Pudding_With_Nata_De_Coco_3_S_Mixed food:ingredientsListAsText "air", "nata de coco", "gula", "sari buah leci", "stroberi", "mangga", "susu bubuk", "extraxt rumput laut", "asam sitrat", "perisai sintetik", "leci", "stroberi", "mangga", "pewarna", "tartrazin ci  merah allura ci" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Ichitan_Thai_Milk_Green_Tea_Drink a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "360";
+	rdfs:label "ichitan thai milk green tea drink";
+	gr:hasManufacturer halalm:Cv_Maju_Sari_Teh .
+
+halalf:Ichitan_Thai_Milk_Green_Tea_Drink foodlirmm:certificate halalc:15120039090819 .
+
+halalf:Ichitan_Thai_Milk_Green_Tea_Drink food:containsIngredient halali:air,halali:gula,halali:krimer_nabati,halali:susu_bubuk_skim,halali:penstabil_nabati,halali:perisa_sintetik,halali:ekstrak_teh,halali:pengatur_keasaman,halali:natrium_sitrat,halali:pengemulsi_nabati_ester_sukrosa_asam_lemak,halali:garam,halali:penstabil_nabati_natrium_hidrogen_karbonat,halali:pewarna_sintetik .
+
+halalf:Ichitan_Thai_Milk_Green_Tea_Drink food:ingredientsListAsText "air", "gula", "krimer nabati", "susu bubuk skim", "penstabil nabati", "perisa sintetik", "ekstrak teh", "pengatur keasaman", "natrium sitrat", "pengemulsi nabati ester sukrosa asam lemak", "garam", "penstabil nabati natrium hidrogen karbonat", "pewarna sintetik" .
+

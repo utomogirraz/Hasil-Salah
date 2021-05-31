@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Hatari_Crackers_See_Hong_Puff_Sugar a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "501";
+	rdfs:label "hatari crackers see hong puff sugar";
+	gr:hasManufacturer halalm:Pt_Universal_Indofood_Product .
+
+halalf:Hatari_Crackers_See_Hong_Puff_Sugar foodlirmm:certificate halalc:09100001820807 .
+
+halalf:Hatari_Crackers_See_Hong_Puff_Sugar food:containsIngredient halali:tepung_terigu,halali:tepung_tapioka,halali:tepung_susu,halali:minyak_tumbuhtumbuhan,halali:garam,halali:gula,halali:ragi,halali:amonium_bikarbonat .
+
+halalf:Hatari_Crackers_See_Hong_Puff_Sugar food:ingredientsListAsText "tepung terigu", "tepung tapioka", "tepung susu", "minyak tumbuh-tumbuhan", "garam", "gula", "ragi", "amonium bikarbonat" .
+

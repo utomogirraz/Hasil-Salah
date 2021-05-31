@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Hatari_Jam_Biscuit_Peanut a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1073";
+	rdfs:label "hatari jam biscuit peanut";
+	gr:hasManufacturer halalm:Golite .
+
+halalf:Hatari_Jam_Biscuit_Peanut foodlirmm:certificate halalc:01101161420316 .
+
+halalf:Hatari_Jam_Biscuit_Peanut food:containsIngredient halali:tepung_terigu,halali:gula,halali:minyak_tumbuhtumbuhan,halali:susu_bubuk,halali:tepung_jagung,halali:selai_kacang,halali:garam,halali:pengembang_amonium_bikarbonat,halali:natrium_bikarbonat .
+
+halalf:Hatari_Jam_Biscuit_Peanut food:ingredientsListAsText "tepung terigu", "gula", "minyak tumbuh-tumbuhan", "susu bubuk", "tepung jagung", "selai kacang", "garam", "pengembang amonium bikarbonat", "natrium bikarbonat" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Haribo_Candy_Gummy_Gold_Bears a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1248";
+	rdfs:label "haribo candy gummy gold bears";
+	gr:hasManufacturer halalm:Pt_Premier_Doughnut_Indonesia_Krispy_Kreme .
+
+halalf:Haribo_Candy_Gummy_Gold_Bears foodlirmm:certificate halalc:00160068660314 .
+
+halalf:Haribo_Candy_Gummy_Gold_Bears food:containsIngredient halali:sirup_glukosa,halali:gula,halali:gelatin_sapi,halali:dekstrosa,halali:konsentrat_sari_buah,halali:apel,halali:stroberi,halali:raspberry,halali:jeruk,halali:jeruk_nipis,halali:nanas,halali:pengatur_keasaman,halali:asam_sitrat,halali:konsentrat_buah,halali:sayur,halali:jelatang,halali:apel,halali:elderberi,halali:jeruk,halali:aronia,halali:mangga,halali:markisa,halali:anggur_merah,halali:perisa_identik_alami,halali:minyak_nabati_pelapis,halali:lilin_malam,halali:karnauba,halali:perisa_alami,halali:konsentrat_safflower,halali:ekstrak_eldeberi_produk_ini_tidak_babi_atau_bahan_baku_babi .
+
+halalf:Haribo_Candy_Gummy_Gold_Bears food:ingredientsListAsText "sirup glukosa", "gula", "gelatin sapi", "dekstrosa", "konsentrat sari buah", "apel", "stroberi", "raspberry", "jeruk", "jeruk nipis", "nanas", "pengatur keasaman", "asam sitrat", "konsentrat buah", "sayur", "jelatang", "apel", "elderberi", "jeruk", "aronia", "mangga", "markisa", "anggur merah", "perisa identik alami", "minyak nabati pelapis", "lilin malam", "karnauba", "perisa alami", "konsentrat safflower", "ekstrak eldeberi produk ini tidak babi atau bahan baku babi" .
+

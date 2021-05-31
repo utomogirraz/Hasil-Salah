@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Inaco_Jelly_Mini_15_S a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1219";
+	rdfs:label "inaco jelly mini,15's";
+	gr:hasManufacturer halalm:Pt_Yupi_Indo_Jelly_Gum .
+
+halalf:Inaco_Jelly_Mini_15_S foodlirmm:certificate halalc:00110060360212 .
+
+halalf:Inaco_Jelly_Mini_15_S food:containsIngredient halali:air,halali:gula,halali:nata_de_coco,halali:karagen,halali:pengatur_keasaman,halali:asam_sitrat,halali:perisa,halali:mangga,halali:anggur,halali:leci,halali:stroberi,halali:jeruk,halali:nanas,halali:sari_buah,halali:mangga,halali:anggur,halali:leci,halali:stroberi,halali:jeruk,halali:nanas,halali:pengatur_kalium_sorbat,halali:pewarna_makanan,halali:poceau_r_ci,halali:tartrazin_ci,halali:kuning_fcf_ci,halali:biru_berlian_ci,halali:karmoisin_ci .
+
+halalf:Inaco_Jelly_Mini_15_S food:ingredientsListAsText "air", "gula", "nata de coco", "karagen", "pengatur keasaman", "asam sitrat", "perisa", "mangga", "anggur", "leci", "stroberi", "jeruk", "nanas", "sari buah", "mangga", "anggur", "leci", "stroberi", "jeruk", "nanas", "pengatur kalium sorbat", "pewarna makanan", "poceau r ci", "tartrazin ci", "kuning fcf ci", "biru berlian ci", "karmoisin ci" .
+

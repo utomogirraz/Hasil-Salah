@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Happytos_Snack_Tortilla_Chips_Nacho_Cheese a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "782";
+	rdfs:label "happytos snack tortilla chips nacho cheese";
+	gr:hasManufacturer halalm:Pt_Dua_Kelinci .
+
+halalf:Happytos_Snack_Tortilla_Chips_Nacho_Cheese foodlirmm:certificate halalc:00100017571001 .
+
+halalf:Happytos_Snack_Tortilla_Chips_Nacho_Cheese food:containsIngredient halali:jagung,halali:minyak_kelapa_sawit,halali:antioksidan_tbhq,halali:bumbu_rasa_keju_nacho,halali:_penguat_rasa_dinatrium___ribonukleotida,halali:bumbu_keju,halali:penguat_rasa_dinatrium___ribonukleotida,halali:gula,halali:bumbu_daging_sapi,halali:penguat_rasa_dinatrium___ribonukleotida,halali:garam,halali:ekstrak_ragi .
+
+halalf:Happytos_Snack_Tortilla_Chips_Nacho_Cheese food:ingredientsListAsText "jagung", "minyak kelapa sawit", "antioksidan tbhq", "bumbu rasa keju nacho", " penguat rasa dinatrium ' - ribonukleotida", "bumbu keju", "penguat rasa dinatrium ' - ribonukleotida", "gula", "bumbu daging sapi", "penguat rasa dinatrium ' - ribonukleotida", "garam", "ekstrak ragi" .
+

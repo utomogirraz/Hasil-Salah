@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Indomaret_Snack_Kacang_Polong_Tepung a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "240";
+	rdfs:label "indomaret snack kacang polong tepung";
+	gr:hasManufacturer halalm:Bellarosa_Abadi .
+
+halalf:Indomaret_Snack_Kacang_Polong_Tepung foodlirmm:certificate halalc:17100044921218 .
+
+halalf:Indomaret_Snack_Kacang_Polong_Tepung food:containsIngredient halali:kacang_polong,halali:tepung_tapioka,halali:minyak_goreng,halali:gula,halali:garam .
+
+halalf:Indomaret_Snack_Kacang_Polong_Tepung food:ingredientsListAsText "kacang polong", "tepung tapioka", "minyak goreng", "gula", "garam" .
+

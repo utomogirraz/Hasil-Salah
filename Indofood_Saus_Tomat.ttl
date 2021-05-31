@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Indofood_Saus_Tomat a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "326";
+	rdfs:label "indofood saus tomat";
+	gr:hasManufacturer halalm:Akasia_Trijaya_Cv .
+
+halalf:Indofood_Saus_Tomat foodlirmm:certificate halalc:07060060100519 .
+
+halalf:Indofood_Saus_Tomat food:containsIngredient halali:air,halali:gula,halali:tomat,halali:garam,halali:pengental_nabati,halali:pengatur_keasaman,halali:pengawet,halali:natrium_benzoat,halali:natrium_metabisulfit,halali:perisa,halali:seledri,halali:anti_atokoferol .
+
+halalf:Indofood_Saus_Tomat food:ingredientsListAsText "air", "gula", "tomat", "garam", "pengental nabati", "pengatur keasaman", "pengawet", "natrium benzoat", "natrium metabisulfit", "perisa", "seledri", "anti a-tokoferol" .
+
