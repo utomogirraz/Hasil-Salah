@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kusuka_Cassava_Snack_Barbeque a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1080";
+	rdfs:label "kusuka cassava snack barbeque";
+	gr:hasManufacturer halalm:Pprinslt_Merak_Snack .
+
+halalf:Kusuka_Cassava_Snack_Barbeque foodlirmm:certificate halalc:15100044071219 .
+
+halalf:Kusuka_Cassava_Snack_Barbeque food:containsIngredient halali:singkong,halali:tepung_beras,halali:minyak_kelapa_sawit,halali:tepung_terigu,halali:bumbu_rasa_barbeque,halali:penguat_rasa_dinatrium_inosinat,halali:guanilat,halali:mononatrium_glutamat,halali:antioksidan_tokoferol,halali:pewarna_alami_kurkumin_ci,halali:pemanis_alami_glikosida_steviol,halali:gula,halali:garam .
+
+halalf:Kusuka_Cassava_Snack_Barbeque food:ingredientsListAsText "singkong", "tepung beras", "minyak kelapa sawit", "tepung terigu", "bumbu rasa barbeque", "penguat rasa dinatrium inosinat", "guanilat", "mononatrium glutamat", "antioksidan tokoferol", "pewarna alami kurkumin ci", "pemanis alami glikosida steviol", "gula", "garam" .
+

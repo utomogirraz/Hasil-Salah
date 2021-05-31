@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kolln_Crunchy_Muesli_Honey_Nut a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1231";
+	rdfs:label "kolln crunchy muesli honey nut";
+	gr:hasManufacturer halalm:Pt_Satou_Lab .
+
+halalf:Kolln_Crunchy_Muesli_Honey_Nut foodlirmm:certificate halalc:00100104740620 .
+
+halalf:Kolln_Crunchy_Muesli_Honey_Nut food:containsIngredient halali:serpihan_oat,halali:gula,halali:pengawet_sulfit,halali:minyak_nabati,halali:tepung_gandum,halali:serpihan_gandum,halali:sirup_glukosa,halali:fruktosa,halali:kacangkacangan,halali:kacang_almond,halali:kacang_hezelnut,halali:kacang_mede,halali:madu,halali:tepung_oat,halali:ekstrak_barley_malt,halali:garam,halali:perisa_alami_vanili .
+
+halalf:Kolln_Crunchy_Muesli_Honey_Nut food:ingredientsListAsText "serpihan oat", "gula", "pengawet sulfit", "minyak nabati", "tepung gandum", "serpihan gandum", "sirup glukosa", "fruktosa", "kacang-kacangan", "kacang almond", "kacang hezelnut", "kacang mede", "madu", "tepung oat", "ekstrak barley malt", "garam", "perisa alami vanili" .
+

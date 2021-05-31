@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Lotte_Choco_Pie_Marsmallow_6_S a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1232";
+	rdfs:label "lotte choco pie marsmallow 6's";
+	gr:hasManufacturer halalm:Pt_Rekso_Nasional_Food .
+
+halalf:Lotte_Choco_Pie_Marsmallow_6_S foodlirmm:certificate halalc:00160000630499 .
+
+halalf:Lotte_Choco_Pie_Marsmallow_6_S food:containsIngredient halali:tepung_terigu,halali:cokelat_compound,halali:sirup_glukosa,halali:gula,halali:lemak_nabati,halali:antioksidan_tokoferol,halali:pengemulsi,halali:gliserol,halali:lesitin_kedelai,halali:mo,halali:digliserida_asam_lemak,halali:pgpr,halali:telur,halali:dekstrosa,halali:pati_termodifikasi_penstabil,halali:gelatin_sapi,halali:monokalsium_fosfat,halali:gom_xanthan,halali:pengembang,halali:natrium_bikarbonat,halali:amonium_bikarbonat,halali:sirup_fruktosa,halali:pengawet_kalium_sorbat,halali:perisa_artifisial_vanili,halali:protein_susu_terhidrolisa .
+
+halalf:Lotte_Choco_Pie_Marsmallow_6_S food:ingredientsListAsText "tepung terigu", "cokelat compound", "sirup glukosa", "gula", "lemak nabati", "antioksidan tokoferol", "pengemulsi", "gliserol", "lesitin kedelai", "mo", "digliserida asam lemak", "pgpr", "telur", "dekstrosa", "pati termodifikasi penstabil", "gelatin sapi", "monokalsium fosfat", "gom xanthan", "pengembang", "natrium bikarbonat", "amonium bikarbonat", "sirup fruktosa", "pengawet kalium sorbat", "perisa artifisial vanili", "protein susu terhidrolisa" .
+

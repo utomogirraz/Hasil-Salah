@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kraft_Sandwich_Oreo_Strawbery_Creme a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1212";
+	rdfs:label "kraft sandwich oreo strawbery creme";
+	gr:hasManufacturer halalm:Pt_Suparma_Tbk .
+
+halalf:Kraft_Sandwich_Oreo_Strawbery_Creme foodlirmm:certificate halalc:00170090670918 .
+
+halalf:Kraft_Sandwich_Oreo_Strawbery_Creme food:containsIngredient halali:gula,halali:tepung_terigu,halali:minyak_nabati,halali:antioksidan_tbhq,halali:bubuk/serbuk_cokelat,halali:sirup_fruktosa,halali:pati_jagung,halali:garam,halali:pengembang,halali:amonium,halali:natrium_bikarbonat,halali:pengemulsi,halali:lesitin_kedelai,halali:perisa_stroberi,halali:vanili,halali:pengatur_keasaman,halali:asam_sitrat,halali:pewarna,halali:karminci,halali:bubuk_stroberi .
+
+halalf:Kraft_Sandwich_Oreo_Strawbery_Creme food:ingredientsListAsText "gula", "tepung terigu", "minyak nabati", "antioksidan tbhq", "bubuk/serbuk cokelat", "sirup fruktosa", "pati jagung", "garam", "pengembang", "amonium", "natrium bikarbonat", "pengemulsi", "lesitin kedelai", "perisa stroberi", "vanili", "pengatur keasaman", "asam sitrat", "pewarna", "karmin-ci", "bubuk stroberi" .
+

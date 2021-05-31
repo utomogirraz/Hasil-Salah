@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Indomilk_Kental_Manis_Chocolate a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "550";
+	rdfs:label "indomilk kental manis chocolate";
+	gr:hasManufacturer halalm:Pt_Indonesia_Miki_Industries .
+
+halalf:Indomilk_Kental_Manis_Chocolate foodlirmm:certificate halalc:00120059691111 .
+
+halalf:Indomilk_Kental_Manis_Chocolate food:containsIngredient halali:gula,halali:susu_sapi,halali:minyak_nabati,halali:bubuk_whey,halali:bubuk_cokelat,halali:buttermilk_bubuk,halali:maltodekstrin,halali:air,halali:susu_bubuk_skim,halali:perisa_identik_alami,halali:pewarna_alami_karamel_e_c,halali:d,halali:garam,halali:laktosa,halali:penstabil_nabati,halali:antioksidan_tokoferol,halali:vitamin_a,halali:b,halali:kolin,halali:vitamin_d .
+
+halalf:Indomilk_Kental_Manis_Chocolate food:ingredientsListAsText "gula", "susu sapi", "minyak nabati", "bubuk whey", "bubuk cokelat", "buttermilk bubuk", "maltodekstrin", "air", "susu bubuk skim", "perisa identik alami", "pewarna alami karamel e c", "d", "garam", "laktosa", "penstabil nabati", "antioksidan tokoferol", "vitamin a", "b", "kolin", "vitamin d" .
+

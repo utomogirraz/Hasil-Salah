@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Indomie_Mi_Instan_Soto_Mie a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "495";
+	rdfs:label "indomie mi instan soto mie";
+	gr:hasManufacturer halalm:Megahputra_Selahtera_Pt .
+
+halalf:Indomie_Mi_Instan_Soto_Mie foodlirmm:certificate halalc:06090001870608 .
+
+halalf:Indomie_Mi_Instan_Soto_Mie food:containsIngredient halali:tepung_terigu,halali:minyak_sayur,halali:tepung_tapioka,halali:garam,halali:pemantap,halali:nabati,halali:natrium_tripolifosfat,halali:pengatur_keasaman,halali:mineral,halali:zat_besi,halali:pewarna,halali:tartrazin_ci,halali:antioksidan_tbhq,halali:garam,halali:gula,halali:penguat_rasa_mononatrium_glutamat,halali:msg,halali:perisa_sapi,halali:pewarna_karamel,halali:penguat_rasadinatrium_guanilat,halali:inosinat,halali:sulfit,halali:bubuk_bawang_putih,halali:bubuk_bawang_bombay,halali:bubuk_lada,halali:daun_bawang,halali:vitamin_a,halali:vitamin_b,halali:vitamin_b,halali:vitamin_b,halali:niasin,halali:asam_folat,halali:pantotenat,halali:bubuk_cabai,halali:minyak_sayur .
+
+halalf:Indomie_Mi_Instan_Soto_Mie food:ingredientsListAsText "tepung terigu", "minyak sayur", "tepung tapioka", "garam", "pemantap", "nabati", "natrium tripolifosfat", "pengatur keasaman", "mineral", "zat besi", "pewarna", "tartrazin ci", "antioksidan tbhq", "garam", "gula", "penguat rasa mononatrium glutamat", "msg", "perisa sapi", "pewarna karamel", "penguat rasadinatrium guanilat", "inosinat", "sulfit", "bubuk bawang putih", "bubuk bawang bombay", "bubuk lada", "daun bawang", "vitamin a", "vitamin b", "vitamin b", "vitamin b", "niasin", "asam folat", "pantotenat", "bubuk cabai", "minyak sayur" .
+

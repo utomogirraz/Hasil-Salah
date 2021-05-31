@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kit_Kat_Chocolate_4_Fingers_Gold a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "942";
+	rdfs:label "kit kat chocolate 4 fingers gold";
+	gr:hasManufacturer halalm:Nestle_Products_Malaysia_Sdn_Bhd .
+
+halalf:Kit_Kat_Chocolate_4_Fingers_Gold foodlirmm:certificate halalc:00110020380502 .
+
+halalf:Kit_Kat_Chocolate_4_Fingers_Gold food:containsIngredient halali:cokelat_paduan_putih,halali:tepung_terigu,halali:maltodekstrin,halali:lemak,halali:minyak_nabati,halali:sirup_glukosa_bubuk,halali:kakao_bubuk,halali:pewarna_alami_merah_bit,halali:perisa_sintetik,halali:garam,halali:penstabil,halali:pengemulsi_lesitin_kedelai .
+
+halalf:Kit_Kat_Chocolate_4_Fingers_Gold food:ingredientsListAsText "cokelat paduan putih", "tepung terigu", "maltodekstrin", "lemak", "minyak nabati", "sirup glukosa bubuk", "kakao bubuk", "pewarna alami merah bit", "perisa sintetik", "garam", "penstabil", "pengemulsi lesitin kedelai" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Lay_S_Snack_Potato_Chips_Saus_Krim_Onion a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1220";
+	rdfs:label "lay's snack potato chips saus krim,onion";
+	gr:hasManufacturer halalm:Dlala .
+
+halalf:Lay_S_Snack_Potato_Chips_Saus_Krim_Onion foodlirmm:certificate halalc:00100115540221 .
+
+halalf:Lay_S_Snack_Potato_Chips_Saus_Krim_Onion food:containsIngredient halali:kentang,halali:minyak_kelapa_sawit,halali:bumbu_rasa_saus_krim,halali:bawang,halali:susu,halali:kedelai,halali:gandum,halali:bawang_merah_bubuk,halali:penguat_rasa,halali:mononatrium_glutamat,halali:dinatrium_ribonukleotida,halali:serpihan_daun_peterseli .
+
+halalf:Lay_S_Snack_Potato_Chips_Saus_Krim_Onion food:ingredientsListAsText "kentang", "minyak kelapa sawit", "bumbu rasa saus krim", "bawang", "susu", "kedelai", "gandum", "bawang merah bubuk", "penguat rasa", "mononatrium glutamat", "dinatrium ribonukleotida", "serpihan daun peterseli" .
+

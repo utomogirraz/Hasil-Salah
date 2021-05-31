@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kraft_Keju_Cheddar_Olahan a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "475";
+	rdfs:label "kraft keju cheddar olahan";
+	gr:hasManufacturer halalm:Pt_Diamond_Cold_Storage .
+
+halalf:Kraft_Keju_Cheddar_Olahan foodlirmm:certificate halalc:00040040820606 .
+
+halalf:Kraft_Keju_Cheddar_Olahan food:containsIngredient halali:keju_cheddar,halali:air,halali:padatan_kasein_susu,halali:minyak_nabati,halali:antioksidan_bha,halali:pengemulsi,halali:garam_fosfat,halali:pati_jagung,halali:garam,halali:pengatur_keasaman,halali:asam_laktat,halali:pengawet,halali:kalium_sorbat,halali:nissin,halali:pewarna_alami,halali:vitamin_d,halali:antioksidan_tokoferol .
+
+halalf:Kraft_Keju_Cheddar_Olahan food:ingredientsListAsText "keju cheddar", "air", "padatan kasein susu", "minyak nabati", "antioksidan bha", "pengemulsi", "garam fosfat", "pati jagung", "garam", "pengatur keasaman", "asam laktat", "pengawet", "kalium sorbat", "nissin", "pewarna alami", "vitamin d", "antioksidan tokoferol" .
+

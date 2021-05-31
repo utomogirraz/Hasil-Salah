@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kraft_Keju_Cake a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "403";
+	rdfs:label "kraft keju cake";
+	gr:hasManufacturer halalm:Esthree .
+
+halalf:Kraft_Keju_Cake foodlirmm:certificate halalc:15160029640418 .
+
+halalf:Kraft_Keju_Cake food:containsIngredient halali:tepung_terigu,halali:gula,halali:sirup_glukosa,halali:keju_bubuk,halali:pewarna_kuning_fcf_ci,halali:kurkumin_ci,halali:telur,halali:humektan,halali:gliserol,halali:sorbitol,halali:keju_kraft_cheddar,halali:pengawet,halali:nisin,halali:asam_sorbat,halali:pewarna,halali:annatto_ci,halali:minyak_nabati,halali:pati_jagung,halali:kalsium_karbonat,halali:pengemulsi_nabati,halali:susu_bubuk_skim,halali:garam,halali:pengembang,halali:natrium_bikarbonat,halali:natrium_asam_pirofosfat,halali:pengatur_keasaman,halali:asam_sitrat,halali:pengawet,halali:kalium_sorbat,halali:perisa_artifisial_mentega,halali:vitamin_d .
+
+halalf:Kraft_Keju_Cake food:ingredientsListAsText "tepung terigu", "gula", "sirup glukosa", "keju bubuk", "pewarna kuning fcf ci", "kurkumin ci", "telur", "humektan", "gliserol", "sorbitol", "keju kraft cheddar", "pengawet", "nisin", "asam sorbat", "pewarna", "annatto ci", "minyak nabati", "pati jagung", "kalsium karbonat", "pengemulsi nabati", "susu bubuk skim", "garam", "pengembang", "natrium bikarbonat", "natrium asam pirofosfat", "pengatur keasaman", "asam sitrat", "pengawet", "kalium sorbat", "perisa artifisial mentega", "vitamin d" .
+

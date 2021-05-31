@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kraft_Cheese_Single_High_Calcium_10S_Plain a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1249";
+	rdfs:label "kraft cheese single high calcium 10s plain";
+	gr:hasManufacturer halalm:Pt_Kraft_Ultra_Jaya_Indonesia .
+
+halalf:Kraft_Cheese_Single_High_Calcium_10S_Plain foodlirmm:certificate halalc:00040015610601 .
+
+halalf:Kraft_Cheese_Single_High_Calcium_10S_Plain food:containsIngredient halali:keju_cheddar,halali:susu_bubuk,halali:minyak_nabati,halali:pati_nabati,halali:pengemulsi,halali:dinatrium_fosfat,halali:mononatrium_fosfat_tri_kalsium_fosfat,halali:garam,halali:pengawet_kalium_sorbat,halali:nisin,halali:pewarna_annatto,halali:ci,halali:air,halali:min,halali:lemak,halali:db .
+
+halalf:Kraft_Cheese_Single_High_Calcium_10S_Plain food:ingredientsListAsText "keju cheddar", "susu bubuk", "minyak nabati", "pati nabati", "pengemulsi", "dinatrium fosfat", "mononatrium fosfat tri kalsium fosfat", "garam", "pengawet kalium sorbat", "nisin", "pewarna annatto", "ci", "air", "min", "lemak", "db" .
+

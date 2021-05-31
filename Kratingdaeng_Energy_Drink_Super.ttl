@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kratingdaeng_Energy_Drink_Super a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1048";
+	rdfs:label "kratingdaeng energy drink super";
+	gr:hasManufacturer halalm:Pt_Wijaya_Putra_Samudra .
+
+halalf:Kratingdaeng_Energy_Drink_Super foodlirmm:certificate halalc:01281250671020 .
+
+halalf:Kratingdaeng_Energy_Drink_Super food:containsIngredient halali:taurine_mg,halali:glucurolactore_mg,halali:cafeine_mg,halali:inositol_mg,halali:lysine_mg,halali:choroline_bitartate_mg,halali:niacicinamide,halali:vitamin_b_mg,halali:pyrodoxine,halali:vitamin_b_mg,halali:dexpanthenol,halali:provitamin_b_mg,halali:cyanocobalamine,halali:vitamin_b_mcg,halali:sugar,halali:gula_murni_g,halali:procoaeu_r_ci,halali:tartrazine_ci,halali:citric_acid,halali:sodium_benzoate,halali:flavouring .
+
+halalf:Kratingdaeng_Energy_Drink_Super food:ingredientsListAsText "taurine mg", "glucurolactore mg", "cafeine mg", "inositol mg", "lysine mg", "choroline bitartate mg", "niacicinamide", "vitamin b mg", "pyrodoxine", "vitamin b mg", "dexpanthenol", "provitamin b mg", "cyanocobalamine", "vitamin b mcg", "sugar", "gula murni g", "procoaeu r ci", "tartrazine ci", "citric acid", "sodium benzoate", "flavouring" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Kolln_Crunchy_Muesli_Choco_Brittle a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1167";
+	rdfs:label "kolln crunchy muesli choco brittle";
+	gr:hasManufacturer halalm:Sophie_Souffle_Bakery .
+
+halalf:Kolln_Crunchy_Muesli_Choco_Brittle foodlirmm:certificate halalc:15160042541119 .
+
+halalf:Kolln_Crunchy_Muesli_Choco_Brittle food:containsIngredient halali:serpihan_oat,halali:gula,halali:pengawet_sulfit,halali:minyak_nabati,halali:tepung_gandum,halali:serpihan_gandum,halali:sirup_glukosa,halali:fruktosa,halali:kacang_hezelnut,halali:kakao_massa,halali:lemak_kakao,halali:cokelat_rendah_lemak,halali:tepung_oat,halali:sirup_karamel,halali:sirup_gula_invert,halali:ekstrak_barley_malt,halali:garam,halali:pengemulsi_lesitin,halali:kedelai .
+
+halalf:Kolln_Crunchy_Muesli_Choco_Brittle food:ingredientsListAsText "serpihan oat", "gula", "pengawet sulfit", "minyak nabati", "tepung gandum", "serpihan gandum", "sirup glukosa", "fruktosa", "kacang hezelnut", "kakao massa", "lemak kakao", "cokelat rendah lemak", "tepung oat", "sirup karamel", "sirup gula invert", "ekstrak barley malt", "garam", "pengemulsi lesitin", "kedelai" .
+

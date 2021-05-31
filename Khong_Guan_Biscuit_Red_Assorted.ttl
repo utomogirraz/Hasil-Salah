@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Khong_Guan_Biscuit_Red_Assorted a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "979";
+	rdfs:label "khong guan biscuit red assorted";
+	gr:hasManufacturer halalm:Pt_Khong_Guan_Biscuit_Factory_Indonesia_Ltd .
+
+halalf:Khong_Guan_Biscuit_Red_Assorted foodlirmm:certificate halalc:00100039280306 .
+
+halalf:Khong_Guan_Biscuit_Red_Assorted food:containsIngredient halali:tepung_terigu,halali:gula,halali:lemak_nabati,halali:susu_bubuk,halali:cokelat_bubuk,halali:sultana,halali:garam,halali:telur,halali:bahan_pengembang,halali:natrium_bikarbonat,halali:amonium_bikarbonat,halali:ragi,halali:perisa_susu,halali:perisa_lemon,halali:perisa_nanas,halali:perisa_cokelat,halali:pewarna_makanan,halali:tartrazin,halali:ci .
+
+halalf:Khong_Guan_Biscuit_Red_Assorted food:ingredientsListAsText "tepung terigu", "gula", "lemak nabati", "susu bubuk", "cokelat bubuk", "sultana", "garam", "telur", "bahan pengembang", "natrium bikarbonat", "amonium bikarbonat", "ragi", "perisa susu", "perisa lemon", "perisa nanas", "perisa cokelat", "pewarna makanan", "tartrazin", "ci" .
+

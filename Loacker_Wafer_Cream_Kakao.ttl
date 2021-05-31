@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Loacker_Wafer_Cream_Kakao a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "837";
+	rdfs:label "loacker wafer cream kakao";
+	gr:hasManufacturer halalm:Pt_Unimos .
+
+halalf:Loacker_Wafer_Cream_Kakao foodlirmm:certificate halalc:00100083330617 .
+
+halalf:Loacker_Wafer_Cream_Kakao food:containsIngredient halali:wheat_flour,halali:glucose_syrup,halali:sugar,halali:hazelnuts__in_the_cream,halali:sweet_whey_powder,halali:soy_flour,halali:skimmed_milk_powder,halali:fat_reduced_cocoa,halali:dekstrosa,halali:malt_extract,halali:garam,halali:raising_agents,halali:sodium_hydrogen_carbonate,halali:disodium_difosfat,halali:emulsifier_soy_lecithins,halali:vanili_pods,halali:bourbon_pure_coconut_oil,halali:fine_chocolate,halali:specially_selected_hazelnuts_from_naples_and_authentic_vanili_pods .
+
+halalf:Loacker_Wafer_Cream_Kakao food:ingredientsListAsText "wheat flour", "glucose syrup", "sugar", "hazelnuts  in the cream", "sweet whey powder", "soy flour", "skimmed milk powder", "fat reduced cocoa", "dekstrosa", "malt extract", "garam", "raising agents", "sodium hydrogen carbonate", "disodium difosfat", "emulsifier soy lecithins", "vanili pods", "bourbon pure coconut oil", "fine chocolate", "specially selected hazelnuts from naples and authentic vanili pods" .
+
