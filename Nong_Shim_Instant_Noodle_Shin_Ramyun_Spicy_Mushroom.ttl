@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nong_Shim_Instant_Noodle_Shin_Ramyun_Spicy_Mushroom a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1247";
+	rdfs:label "nong shim instant noodle shin ramyun spicy mushroom";
+	gr:hasManufacturer halalm:Pt_Abc_President_Indonesia .
+
+halalf:Nong_Shim_Instant_Noodle_Shin_Ramyun_Spicy_Mushroom foodlirmm:certificate halalc:00090005900797 .
+
+halalf:Nong_Shim_Instant_Noodle_Shin_Ramyun_Spicy_Mushroom food:containsIngredient halali:tepung_gandum,halali:minyak_nabati,halali:pati_kentang,halali:garam,halali:pengatur_keasaman,halali:saus_berperisa_sayuran,halali:pewarna_alami_riboflavin,halali:ekstrak_teh_hijau,halali:garam,halali:penguat_rasa,halali:hidrolisa_protein_nabati,halali:cabai_bubuk,halali:rempah_rempah,halali:gula,halali:pasta_kedelai_bubuk,halali:ekstrak_ragi,halali:minyak_nabati,halali:jamur,halali:tepung_jagung,halali:ekstak_cabai,halali:sirup_malt,halali:maltodekstrin,halali:pewarna_alami_karamel_i,halali:kucai_kering,halali:kubis_kering,halali:jamur_kering,halali:wortel_kering,halali:cabai_kering .
+
+halalf:Nong_Shim_Instant_Noodle_Shin_Ramyun_Spicy_Mushroom food:ingredientsListAsText "tepung gandum", "minyak nabati", "pati kentang", "garam", "pengatur keasaman", "saus berperisa sayuran", "pewarna alami riboflavin", "ekstrak teh hijau", "garam", "penguat rasa", "hidrolisa protein nabati", "cabai bubuk", "rempah rempah", "gula", "pasta kedelai bubuk", "ekstrak ragi", "minyak nabati", "jamur", "tepung jagung", "ekstak cabai", "sirup malt", "maltodekstrin", "pewarna alami karamel i", "kucai kering", "kubis kering", "jamur kering", "wortel kering", "cabai kering" .
+

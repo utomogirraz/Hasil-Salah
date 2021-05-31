@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Milo_Cereal_Balls_Combo_Pack_Coklat a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1014";
+	rdfs:label "milo cereal balls combo pack coklat";
+	gr:hasManufacturer halalm:Rumah_Pizza .
+
+halalf:Milo_Cereal_Balls_Combo_Pack_Coklat foodlirmm:certificate halalc:1331002631120 .
+
+halalf:Milo_Cereal_Balls_Combo_Pack_Coklat food:containsIngredient halali:serealia,halali:tepung_gandum_utuh,halali:tepung_gandum,halali:gula,halali:sari_malt,halali:bubuk_kakao,halali:minyak_nabati,halali:susu_bubuk_skim,halali:mineral,halali:garam,halali:bubuk_whey,halali:pengemulsi_lesitin_kedelai_perisa,halali:vanili,halali:cokelat,halali:premiks_vitamin,halali:antioksidan_tokoferol_nestle,halali:susu_sapi,halali:susu_bubuk_skim,halali:mineral,halali:pengemulsi_lesitin_kedelai,halali:premiks_vitamin .
+
+halalf:Milo_Cereal_Balls_Combo_Pack_Coklat food:ingredientsListAsText "serealia", "tepung gandum utuh", "tepung gandum", "gula", "sari malt", "bubuk kakao", "minyak nabati", "susu bubuk skim", "mineral", "garam", "bubuk whey", "pengemulsi lesitin kedelai perisa", "vanili", "cokelat", "premiks vitamin", "antioksidan tokoferol nestle", "susu sapi", "susu bubuk skim", "mineral", "pengemulsi lesitin kedelai", "premiks vitamin" .
+

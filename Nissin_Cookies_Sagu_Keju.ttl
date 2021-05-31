@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nissin_Cookies_Sagu_Keju a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "432";
+	rdfs:label "nissin cookies sagu keju";
+	gr:hasManufacturer halalm:Pt_Lottemart_Indonesia .
+
+halalf:Nissin_Cookies_Sagu_Keju foodlirmm:certificate halalc:00160090860918 .
+
+halalf:Nissin_Cookies_Sagu_Keju food:containsIngredient halali:tepung_sagu,halali:gula,halali:lemak_nabati,halali:telur,halali:tepung_tapioka,halali:keju_cheddar,halali:susu_bubuk_full_cream,halali:garam,halali:perisa_sintetik_vanili .
+
+halalf:Nissin_Cookies_Sagu_Keju food:ingredientsListAsText "tepung sagu", "gula", "lemak nabati", "telur", "tepung tapioka", "keju cheddar", "susu bubuk full cream", "garam", "perisa sintetik vanili" .
+

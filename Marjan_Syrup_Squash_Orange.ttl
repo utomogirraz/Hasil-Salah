@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Marjan_Syrup_Squash_Orange a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "652";
+	rdfs:label "marjan syrup squash orange";
+	gr:hasManufacturer halalm:Gambino_Coffee .
+
+halalf:Marjan_Syrup_Squash_Orange foodlirmm:certificate halalc:00120088760518 .
+
+halalf:Marjan_Syrup_Squash_Orange food:containsIngredient halali:air,halali:gula_pasir,halali:pengatur_keasaman,halali:asam_sitrat,halali:sari_buah_jeruk,halali:perisa_jeruk,halali:pemantap_nabati,halali:pemanis_buatan,halali:pengawet_natrium_benzoat .
+
+halalf:Marjan_Syrup_Squash_Orange food:ingredientsListAsText "air", "gula pasir", "pengatur keasaman", "asam sitrat", "sari buah jeruk", "perisa jeruk", "pemantap nabati", "pemanis buatan", "pengawet natrium benzoat" .
+

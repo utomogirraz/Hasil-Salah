@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nestum_Bubur_Cereal_Multigrain_Cokelat a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1201";
+	rdfs:label "nestum bubur cereal multigrain cokelat";
+	gr:hasManufacturer halalm:Pt_Nestle_Indonesia .
+
+halalf:Nestum_Bubur_Cereal_Multigrain_Cokelat foodlirmm:certificate halalc:00190087810318 .
+
+halalf:Nestum_Bubur_Cereal_Multigrain_Cokelat food:containsIngredient halali:serealia,halali:gandum_utuh,halali:ekstrak_malt,halali:beras,halali:jagung,halali:sukrosa,halali:bubuk_kakao,halali:mineral,halali:susu_skim_bubuk,halali:perisa_alami,halali:krimer_nabati,halali:premiks_vitamin,halali:vitamin_c,halali:perisa_alami,halali:pemanis_alami_glikosida_steviol .
+
+halalf:Nestum_Bubur_Cereal_Multigrain_Cokelat food:ingredientsListAsText "serealia", "gandum utuh", "ekstrak malt", "beras", "jagung", "sukrosa", "bubuk kakao", "mineral", "susu skim bubuk", "perisa alami", "krimer nabati", "premiks vitamin", "vitamin c", "perisa alami", "pemanis alami glikosida steviol" .
+

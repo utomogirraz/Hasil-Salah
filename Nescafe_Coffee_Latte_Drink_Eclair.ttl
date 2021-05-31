@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nescafe_Coffee_Latte_Drink_Eclair a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "868";
+	rdfs:label "nescafe coffee latte drink eclair";
+	gr:hasManufacturer halalm:Gambino_Coffee .
+
+halalf:Nescafe_Coffee_Latte_Drink_Eclair foodlirmm:certificate halalc:00120088760518 .
+
+halalf:Nescafe_Coffee_Latte_Drink_Eclair food:containsIngredient halali:air,halali:gula,halali:susu_bubuk,halali:susu_bubuk_skim,halali:kopi_bubuk_instant,halali:krimer_nabati,halali:penstabil,halali:pengatur_keasaman,halali:perisa_sintetik,halali:pengemulsi_lesitin_kedelai,halali:pemanis_alami_glikosida_steviol .
+
+halalf:Nescafe_Coffee_Latte_Drink_Eclair food:ingredientsListAsText "air", "gula", "susu bubuk", "susu bubuk skim", "kopi bubuk instant", "krimer nabati", "penstabil", "pengatur keasaman", "perisa sintetik", "pengemulsi lesitin kedelai", "pemanis alami glikosida steviol" .
+

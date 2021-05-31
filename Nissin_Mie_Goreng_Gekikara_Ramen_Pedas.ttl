@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Pedas a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "580";
+	rdfs:label "nissin mie goreng gekikara ramen pedas";
+	gr:hasManufacturer halalm:Pt_Dayatama_Polanusa .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Pedas foodlirmm:certificate halalc:05160015320818 .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Pedas food:containsIngredient halali:tepung,halali:minyak_nabati,halali:tapioka,halali:garam,halali:penstabil,halali:pengatur_keasaman,halali:gula,halali:penguat_rasa,halali:garam,halali:bubuk_cabai,halali:hidrosilat_protein_nabati,halali:bubul_bawang_merah,halali:bubuk_bawang_putih,halali:bubuk_jamur,halali:bubuk_lada_putih,halali:bubuk_lada_hitam,halali:pewarna,halali:perisa_identik_alami,halali:bubuk_jahe,halali:minyak_nabati,halali:minyak_bawang_putih,halali:minyak_atsiri_paprika,halali:minyak_cabai,halali:wortel,halali:daun_bawang,halali:jamur_kering,halali:cabai_kering,halali:gula_aren,halali:ekstrak_kedelai,halali:air,halali:garam,halali:kriuk_bawang .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Pedas food:ingredientsListAsText "tepung", "minyak nabati", "tapioka", "garam", "penstabil", "pengatur keasaman", "gula", "penguat rasa", "garam", "bubuk cabai", "hidrosilat protein nabati", "bubul bawang merah", "bubuk bawang putih", "bubuk jamur", "bubuk lada putih", "bubuk lada hitam", "pewarna", "perisa identik alami", "bubuk jahe", "minyak nabati", "minyak bawang putih", "minyak atsiri paprika", "minyak cabai", "wortel", "daun bawang", "jamur kering", "cabai kering", "gula aren", "ekstrak kedelai", "air", "garam", "kriuk bawang" .
+

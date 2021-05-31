@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Premium a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1020";
+	rdfs:label "nissin mie goreng gekikara ramen premium";
+	gr:hasManufacturer halalm:Hakata_Genko .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Premium foodlirmm:certificate halalc:00160111021120 .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Premium food:containsIngredient halali:tepung_terigu,halali:minyak_nabati,halali:pati_kentang,halali:garam,halali:penstabil,halali:pengatur_keasaman,halali:penguat_rasa,halali:gula,halali:garam,halali:wijen,halali:bubuk_lada_hitam,halali:hidrolisa_protein_nabati,halali:perisa_sintetik_ayam,halali:bubuk_kecap,halali:gula_aren,halali:pewarna,halali:bubuk_bawang_putih,halali:perisa_sintetik_tomat,halali:bubuk_cabai,halali:pengatur_keasaman_minyak .
+
+halalf:Nissin_Mie_Goreng_Gekikara_Ramen_Premium food:ingredientsListAsText "tepung terigu", "minyak nabati", "pati kentang", "garam", "penstabil", "pengatur keasaman", "penguat rasa", "gula", "garam", "wijen", "bubuk lada hitam", "hidrolisa protein nabati", "perisa sintetik ayam", "bubuk kecap", "gula aren", "pewarna", "bubuk bawang putih", "perisa sintetik tomat", "bubuk cabai", "pengatur keasaman minyak" .
+

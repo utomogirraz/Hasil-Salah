@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Mizone_Move_On_Minuman_Isotonik_Starfruit a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1216";
+	rdfs:label "mizone move on minuman isotonik starfruit";
+	gr:hasManufacturer halalm:Kantin_Mamih_Kampus_Uhamka .
+
+halalf:Mizone_Move_On_Minuman_Isotonik_Starfruit foodlirmm:certificate halalc:03160034011219 .
+
+halalf:Mizone_Move_On_Minuman_Isotonik_Starfruit food:containsIngredient halali:air,halali:fruktosa,halali:pengatur_keasaman,halali:gula,halali:perisa_sintetik,halali:ekstrak_teh_putih,halali:natrium_klorida,halali:trinatrium_sitrat,halali:kalium_karbonat,halali:kalium_klorida,halali:pengawet,halali:pemanis_buatan,halali:penstabil_nabati,halali:sekuestran,halali:premiks_vitamin .
+
+halalf:Mizone_Move_On_Minuman_Isotonik_Starfruit food:ingredientsListAsText "air", "fruktosa", "pengatur keasaman", "gula", "perisa sintetik", "ekstrak teh putih", "natrium klorida", "trinatrium sitrat", "kalium karbonat", "kalium klorida", "pengawet", "pemanis buatan", "penstabil nabati", "sekuestran", "premiks vitamin" .
+

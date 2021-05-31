@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Mujigae_Jajangmyeon a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1043";
+	rdfs:label "mujigae jajangmyeon";
+	gr:hasManufacturer halalm:Pt_Animo_Resto_Primera_Mujigae .
+
+halalf:Mujigae_Jajangmyeon foodlirmm:certificate halalc:00160103190320 .
+
+halalf:Mujigae_Jajangmyeon food:containsIngredient halali:tepung_terigu,halali:minyak,halali:garam,halali:air,halali:pasta_kedelai_hitam,halali:kecap_asin,halali:bawang_bombay,halali:air,halali:gula,halali:garam,halali:penyedap_rasa,halali:daging_ayam,halali:bawang_bombay .
+
+halalf:Mujigae_Jajangmyeon food:ingredientsListAsText "tepung terigu", "minyak", "garam", "air", "pasta kedelai hitam", "kecap asin", "bawang bombay", "air", "gula", "garam", "penyedap rasa", "daging ayam", "bawang bombay" .
+

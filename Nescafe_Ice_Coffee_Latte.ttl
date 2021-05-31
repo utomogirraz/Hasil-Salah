@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nescafe_Ice_Coffee_Latte a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "710";
+	rdfs:label "nescafe ice coffee latte";
+	gr:hasManufacturer halalm:Pt_Pioneerindo_Gourmet_International_Tbk .
+
+halalf:Nescafe_Ice_Coffee_Latte foodlirmm:certificate halalc:00160057710411 .
+
+halalf:Nescafe_Ice_Coffee_Latte food:containsIngredient halali:air,halali:gula,halali:susu_bubuk_skim,halali:kopi_bubuk_instant,halali:lemak_susu,halali:pengatur_keasaman,halali:perisa_susu,halali:vanili,halali:pengemulsi_lesitin_kedelai,halali:bubuk_kakao,halali:pemantap .
+
+halalf:Nescafe_Ice_Coffee_Latte food:ingredientsListAsText "air", "gula", "susu bubuk skim", "kopi bubuk instant", "lemak susu", "pengatur keasaman", "perisa susu", "vanili", "pengemulsi lesitin kedelai", "bubuk kakao", "pemantap" .
+

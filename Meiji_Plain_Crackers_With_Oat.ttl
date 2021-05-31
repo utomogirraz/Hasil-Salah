@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Meiji_Plain_Crackers_With_Oat a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1223";
+	rdfs:label "meiji plain crackers with oat";
+	gr:hasManufacturer halalm:Pt_Sekar_Laut_Tbk_Sidoarjo .
+
+halalf:Meiji_Plain_Crackers_With_Oat foodlirmm:certificate halalc:00100109151120 .
+
+halalf:Meiji_Plain_Crackers_With_Oat food:containsIngredient halali:tepung_terigu,halali:minyak_nabati,halali:oat,halali:mentega,halali:garam,halali:natrium_bikarbonat,halali:ekstrak_malt_barley,halali:tepung_malt,halali:ragi,halali:bubuk_miso,halali:perlakuan_tepung,halali:pati_jagung,halali:amonium_klorida,halali:kalsium_karbonat .
+
+halalf:Meiji_Plain_Crackers_With_Oat food:ingredientsListAsText "tepung terigu", "minyak nabati", "oat", "mentega", "garam", "natrium bikarbonat", "ekstrak malt barley", "tepung malt", "ragi", "bubuk miso", "perlakuan tepung", "pati jagung", "amonium klorida", "kalsium karbonat" .
+

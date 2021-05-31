@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Mr_Hottest_Snack_Tortilla_Chips_Maitos_Sambal_Balado a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1015";
+	rdfs:label "mr.hottest snack tortilla chips maitos sambal balado";
+	gr:hasManufacturer halalm:Pkkoppwr_Zie_Zie_Snack .
+
+halalf:Mr_Hottest_Snack_Tortilla_Chips_Maitos_Sambal_Balado foodlirmm:certificate halalc:15100043751119 .
+
+halalf:Mr_Hottest_Snack_Tortilla_Chips_Maitos_Sambal_Balado food:containsIngredient halali:jagung,halali:minyak_kelapa_sawit,halali:bumbu_rasa_sambal_balado,halali:_penguat_rasa_mononatrium_glutamat,halali:bawang_putih_bubuk,halali:ekstrak_cabai,halali:pewarna_kuning_fcf_ci .
+
+halalf:Mr_Hottest_Snack_Tortilla_Chips_Maitos_Sambal_Balado food:ingredientsListAsText "jagung", "minyak kelapa sawit", "bumbu rasa sambal balado", " penguat rasa mononatrium glutamat", "bawang putih bubuk", "ekstrak cabai", "pewarna kuning fcf ci" .
+

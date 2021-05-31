@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Mama_Mie_Instant_Noodle_Seafood a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "900";
+	rdfs:label "mama mie instant noodle seafood";
+	gr:hasManufacturer halalm:Noodle_King .
+
+halalf:Mama_Mie_Instant_Noodle_Seafood foodlirmm:certificate halalc:03090016020217 .
+
+halalf:Mama_Mie_Instant_Noodle_Seafood food:containsIngredient halali:tepung_terigu,halali:minyak_nabati,halali:garam,halali:gula,halali:pengental_gum_selulosa,halali:pengembang,halali:kecap,halali:garam,halali:gula,halali:perisa_seafood,halali:ikan,halali:kepiting,halali:u,halali:g,halali:daun_seledri,halali:penguat_rasa,halali:rempah_rempah,halali:pewarna,halali:kaamel,halali:wortel,halali:sawi,halali:protein_kedelai,halali:jagung .
+
+halalf:Mama_Mie_Instant_Noodle_Seafood food:ingredientsListAsText "tepung terigu", "minyak nabati", "garam", "gula", "pengental gum selulosa", "pengembang", "kecap", "garam", "gula", "perisa seafood", "ikan", "kepiting", "u", "g", "daun seledri", "penguat rasa", "rempah rempah", "pewarna", "kaamel", "wortel", "sawi", "protein kedelai", "jagung" .
+

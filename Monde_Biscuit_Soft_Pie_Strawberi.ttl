@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Monde_Biscuit_Soft_Pie_Strawberi a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1053";
+	rdfs:label "monde biscuit soft pie strawberi";
+	gr:hasManufacturer halalm:Pt_Jadi_Abadi_Corak_Biscuit_Factory_Indonesia .
+
+halalf:Monde_Biscuit_Soft_Pie_Strawberi foodlirmm:certificate halalc:00100039350306 .
+
+halalf:Monde_Biscuit_Soft_Pie_Strawberi food:containsIngredient halali:tepung_terigu,halali:margarin,halali:antioksidan_bha,halali:pewarna_beta_karoten_ci,halali:anato_ci,halali:kurkumin_ci,halali:lemak_nabati,halali:antioksidan_bha,halali:selai_rasa_stroberi,halali:stroberi_bubuk,halali:pektin,halali:pengatur_keasaman,halali:asam_sitrat,halali:pewarna_merah_allura_ci,halali:gula,halali:garam .
+
+halalf:Monde_Biscuit_Soft_Pie_Strawberi food:ingredientsListAsText "tepung terigu", "margarin", "antioksidan bha", "pewarna beta karoten ci", "anato ci", "kurkumin ci", "lemak nabati", "antioksidan bha", "selai rasa stroberi", "stroberi bubuk", "pektin", "pengatur keasaman", "asam sitrat", "pewarna merah allura ci", "gula", "garam" .
+

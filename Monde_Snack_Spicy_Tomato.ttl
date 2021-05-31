@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Monde_Snack_Spicy_Tomato a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "605";
+	rdfs:label "monde snack spicy tomato";
+	gr:hasManufacturer halalm:Emmh_Snack_Indonesia .
+
+halalf:Monde_Snack_Spicy_Tomato foodlirmm:certificate halalc:07100071130120 .
+
+halalf:Monde_Snack_Spicy_Tomato food:containsIngredient halali:beras,halali:jagung,halali:dekstrosa,halali:minyak_nabati,halali:gula,halali:whey_bubuk,halali:kecap_bubuk,halali:telur_bubuk,halali:bumbu_tomat_pedas,halali:penguat_rasa_mononatrium_glutamat,halali:garam,halali:tomat_bubuk,halali:cabai_bubuk .
+
+halalf:Monde_Snack_Spicy_Tomato food:ingredientsListAsText "beras", "jagung", "dekstrosa", "minyak nabati", "gula", "whey bubuk", "kecap bubuk", "telur bubuk", "bumbu tomat pedas", "penguat rasa mononatrium glutamat", "garam", "tomat bubuk", "cabai bubuk" .
+

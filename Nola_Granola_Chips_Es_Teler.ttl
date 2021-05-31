@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nola_Granola_Chips_Es_Teler a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "894";
+	rdfs:label "nola granola chips es teler";
+	gr:hasManufacturer halalm:Dalton_Makassar .
+
+halalf:Nola_Granola_Chips_Es_Teler foodlirmm:certificate halalc:06350013040419 .
+
+halalf:Nola_Granola_Chips_Es_Teler food:containsIngredient halali:havermut_utuh,halali:biji_chia,halali:biji_flax,halali:almond,halali:mede,halali:kulit_gandum_beras_merah_organik,halali:jagung_kering_giling,halali:madu,halali:gula_tebu,halali:minyak,halali:kelapa_parut,halali:daun_pan,halali:nangka,halali:garam_laut,halali:rice_crispy .
+
+halalf:Nola_Granola_Chips_Es_Teler food:ingredientsListAsText "havermut utuh", "biji chia", "biji flax", "almond", "mede", "kulit gandum beras merah organik", "jagung kering giling", "madu", "gula tebu", "minyak", "kelapa parut", "daun pan", "nangka", "garam laut", "rice crispy" .
+

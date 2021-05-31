@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Grape a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "775";
+	rdfs:label "nutrijell konnyaku jelly powder grape";
+	gr:hasManufacturer halalm:Afis_Prima_Per_A_Pt .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Grape foodlirmm:certificate halalc:07260039170617 .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Grape food:containsIngredient halali:keragenan,halali:konnyaku_bubuk,halali:gula,halali:serat_pangan_frukto_oligasakarida,halali:pengatur_keasaman,halali:asam_sitrat,halali:kalsium,halali:vitamin_d,halali:perisa_anggur,halali:pewarna_makanan,halali:karmoisin_ci,halali:biru_berlian_ci .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Grape food:ingredientsListAsText "keragenan", "konnyaku bubuk", "gula", "serat pangan frukto oligasakarida", "pengatur keasaman", "asam sitrat", "kalsium", "vitamin d", "perisa anggur", "pewarna makanan", "karmoisin ci", "biru berlian ci" .
+

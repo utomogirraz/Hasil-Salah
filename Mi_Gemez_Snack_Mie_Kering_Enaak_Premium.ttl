@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Mi_Gemez_Snack_Mie_Kering_Enaak_Premium a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1150";
+	rdfs:label "mi gemez snack mie kering enaak premium";
+	gr:hasManufacturer halalm:Usaha_Mie_Musbar .
+
+halalf:Mi_Gemez_Snack_Mie_Kering_Enaak_Premium foodlirmm:certificate halalc:05090022581220 .
+
+halalf:Mi_Gemez_Snack_Mie_Kering_Enaak_Premium food:containsIngredient halali:tepung_terigu,halali:tepung_tapioka,halali:minyak_sayur,halali:bawang_merah,halali:bawang_putih,halali:perisa_ayam,halali:kecap,halali:gula,halali:penguat_rasa_mononatrium_glutamat,halali:garam,halali:natrium_karbonat,halali:natrium_polifosfat,halali:guar_gum,halali:pemanis_sukralosa,halali:pewarna_makanan_ponceau_r_ci,halali:pewarna_makanan_cokelat_ht_ci,halali:pewarna_makanan_tartrazin_ci,halali:pewarna_makanan_kuning_fcf_ci .
+
+halalf:Mi_Gemez_Snack_Mie_Kering_Enaak_Premium food:ingredientsListAsText "tepung terigu", "tepung tapioka", "minyak sayur", "bawang merah", "bawang putih", "perisa ayam", "kecap", "gula", "penguat rasa mononatrium glutamat", "garam", "natrium karbonat", "natrium polifosfat", "guar gum", "pemanis sukralosa", "pewarna makanan ponceau r ci", "pewarna makanan cokelat ht ci", "pewarna makanan tartrazin ci", "pewarna makanan kuning fcf ci" .
+

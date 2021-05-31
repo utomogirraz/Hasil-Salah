@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Kelapa_Muda a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "943";
+	rdfs:label "nutrijell konnyaku jelly powder kelapa muda";
+	gr:hasManufacturer halalm:Cv_Karagen_Indonesia .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Kelapa_Muda foodlirmm:certificate halalc:00260040870606 .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Kelapa_Muda food:containsIngredient halali:karagen,halali:konnyaku_bubuk,halali:pengatur_keasaman,halali:kalium_sitrat,halali:fruktooligosakarida,halali:fos,halali:kalsium_laktat,halali:krimer_nabati,halali:gula,halali:vitamin_d,halali:antioksidan_tokoferol,halali:ekstrak_air_kelapa_muda,halali:perisa_artifisial_kelapa_muda .
+
+halalf:Nutrijell_Konnyaku_Jelly_Powder_Kelapa_Muda food:ingredientsListAsText "karagen", "konnyaku bubuk", "pengatur keasaman", "kalium sitrat", "fruktooligosakarida", "fos", "kalsium laktat", "krimer nabati", "gula", "vitamin d", "antioksidan tokoferol", "ekstrak air kelapa muda", "perisa artifisial kelapa muda" .
+

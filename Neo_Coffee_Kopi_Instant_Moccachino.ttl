@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Neo_Coffee_Kopi_Instant_Moccachino a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "463";
+	rdfs:label "neo coffee kopi instant moccachino";
+	gr:hasManufacturer halalm:Pt_Opal_Coffee_Indonesia .
+
+halalf:Neo_Coffee_Kopi_Instant_Moccachino foodlirmm:certificate halalc:00120082160417 .
+
+halalf:Neo_Coffee_Kopi_Instant_Moccachino food:containsIngredient halali:gula_pasir,halali:krimer_nabati,halali:kopi_bubuk_instant,halali:kakao_bubuk,halali:perisa_sintetik,halali:pemanis_buatan_sukralosa,halali:asesulfam .
+
+halalf:Neo_Coffee_Kopi_Instant_Moccachino food:ingredientsListAsText "gula pasir", "krimer nabati", "kopi bubuk instant", "kakao bubuk", "perisa sintetik", "pemanis buatan sukralosa", "asesulfam" .
+

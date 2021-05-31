@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Nola_Gluten_Free_Cookies_Dark_Chocolate a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "970";
+	rdfs:label "nola gluten free cookies dark chocolate";
+	gr:hasManufacturer halalm:Pt_Gluten_Free_Indonesia .
+
+halalf:Nola_Gluten_Free_Cookies_Dark_Chocolate foodlirmm:certificate halalc:01221184470517 .
+
+halalf:Nola_Gluten_Free_Cookies_Dark_Chocolate food:containsIngredient halali:beras_merah_giling,halali:beras_cokelat_giling,halali:havermut,halali:chia_seed,halali:flax_seed,halali:bubuk_cokelat,halali:soda_kue,halali:gula_kelapa,halali:minyak_sayur,halali:garam_laut,halali:bioaxtive_bseries,halali:postbiotics_lactobacillus:_l_acidophilus .
+
+halalf:Nola_Gluten_Free_Cookies_Dark_Chocolate food:ingredientsListAsText "beras merah giling", "beras cokelat giling", "havermut", "chia seed", "flax seed", "bubuk cokelat", "soda kue", "gula kelapa", "minyak sayur", "garam laut", "bioaxtive b-series", "postbiotics lactobacillus: l acidophilus" .
+
