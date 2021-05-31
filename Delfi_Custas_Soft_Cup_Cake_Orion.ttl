@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Delfi_Custas_Soft_Cup_Cake_Orion a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1084";
+	rdfs:label "delfi custas soft cup cake orion";
+	gr:hasManufacturer halalm:Esthree .
+
+halalf:Delfi_Custas_Soft_Cup_Cake_Orion foodlirmm:certificate halalc:15160029640418 .
+
+halalf:Delfi_Custas_Soft_Cup_Cake_Orion food:containsIngredient halali:telur,halali:tepung_terigu,halali:gula,halali:minyak_sayur,halali:lemak_nabati,halali:sirup_isomalto_oligosakarida,halali:sirup_maltosa,halali:sirup_fruktosa,halali:susu_bubuk,halali:bubuk_kuning_telur,halali:maltodekstrin,halali:pengemulsi_nabati,halali:mo,halali:digliserida_asam_lemak,halali:lesitin_kedelai,halali:esterpoligliserol_asam_risinoleat_terinteresterifikasi,halali:penstabil,halali:kalsium_karbonat,halali:gom_xanthan,halali:hidroksipropil_dipati_fostfat,halali:garam,halali:perisa_sintetik,halali:vanili,halali:custard,halali:pengawet,halali:kalium_sorbat,halali:natrium_propionat,halali:pengembang .
+
+halalf:Delfi_Custas_Soft_Cup_Cake_Orion food:ingredientsListAsText "telur", "tepung terigu", "gula", "minyak sayur", "lemak nabati", "sirup isomalto oligosakarida", "sirup maltosa", "sirup fruktosa", "susu bubuk", "bubuk kuning telur", "maltodekstrin", "pengemulsi nabati", "mo", "digliserida asam lemak", "lesitin kedelai", "esterpoligliserol asam risinoleat terinteresterifikasi", "penstabil", "kalsium karbonat", "gom xanthan", "hidroksipropil dipati fostfat", "garam", "perisa sintetik", "vanili", "custard", "pengawet", "kalium sorbat", "natrium propionat", "pengembang" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Cokelat_Polybag a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "974";
+	rdfs:label ",cow fortigro susu bubuk cokelat polybag";
+	gr:hasManufacturer halalm:Pt_Frisian_Flag_Indonesia .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Cokelat_Polybag foodlirmm:certificate halalc:00040040520606 .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Cokelat_Polybag food:containsIngredient halali:susu_bubuk,halali:sukrosa,halali:maltodekstrin,halali:bubuk_kakao,halali:mineral,halali:pengemulsi_lesitin_kedelai,halali:premiks_vitamin,halali:pemanis_alami_steviol_glikosida .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Cokelat_Polybag food:ingredientsListAsText "susu bubuk", "sukrosa", "maltodekstrin", "bubuk kakao", "mineral", "pengemulsi lesitin kedelai", "premiks vitamin", "pemanis alami steviol glikosida" .
+

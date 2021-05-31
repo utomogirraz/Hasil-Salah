@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Gingerbon_Permen_Jahe a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "341";
+	rdfs:label "gingerbon permen jahe";
+	gr:hasManufacturer halalm:Permen_Kopyos_Bpjph2020 .
+
+halalf:Gingerbon_Permen_Jahe foodlirmm:certificate halalc:08190012421120 .
+
+halalf:Gingerbon_Permen_Jahe food:containsIngredient halali:gula,halali:tepung_tapioka,halali:jahe,halali:lemak_nabati .
+
+halalf:Gingerbon_Permen_Jahe food:ingredientsListAsText "gula", "tepung tapioka", "jahe", "lemak nabati" .
+

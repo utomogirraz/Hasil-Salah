@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Cy_Double_Hot_Chocolate_Drink a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "595";
+	rdfs:label "cy double hot chocolate drink";
+	gr:hasManufacturer halalm:Pt_Marizarasa_Sarimurni .
+
+halalf:Cy_Double_Hot_Chocolate_Drink foodlirmm:certificate halalc:00120026701003 .
+
+halalf:Cy_Double_Hot_Chocolate_Drink food:containsIngredient halali:gula,halali:krimer,halali:bubuk_kakao,halali:penstabil,halali:pengemulsi .
+
+halalf:Cy_Double_Hot_Chocolate_Drink food:ingredientsListAsText "gula", "krimer", "bubuk kakao", "penstabil", "pengemulsi" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Diabetasol_Susu_Formula_Diabetes_Vita_Digest_Vanila a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1168";
+	rdfs:label "diabetasol susu formula diabetes vita digest vanila";
+	gr:hasManufacturer halalm:Esthree .
+
+halalf:Diabetasol_Susu_Formula_Diabetes_Vita_Digest_Vanila foodlirmm:certificate halalc:15160029640418 .
+
+halalf:Diabetasol_Susu_Formula_Diabetes_Vita_Digest_Vanila food:containsIngredient halali:maltodekstrin,halali:minyak_nabati,halali:kaseinat,halali:dekstrin,halali:protein_whey,halali:isomaltulosa,halali:inulin,halali:pemanis_alami_sorbitol,halali:perisa_identik_alami,halali:vanili,halali:susu,halali:pengemulsi_lesitin_kedelai,halali:pemanis_buatan_sukralosa,halali:mineral,halali:vitamin .
+
+halalf:Diabetasol_Susu_Formula_Diabetes_Vita_Digest_Vanila food:ingredientsListAsText "maltodekstrin", "minyak nabati", "kaseinat", "dekstrin", "protein whey", "isomaltulosa", "inulin", "pemanis alami sorbitol", "perisa identik alami", "vanili", "susu", "pengemulsi lesitin kedelai", "pemanis buatan sukralosa", "mineral", "vitamin" .
+

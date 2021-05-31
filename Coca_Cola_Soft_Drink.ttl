@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Coca_Cola_Soft_Drink a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "294";
+	rdfs:label "coca-cola soft drink";
+	gr:hasManufacturer halalm:Pt_Merek_Indah_Lestari .
+
+halalf:Coca_Cola_Soft_Drink foodlirmm:certificate halalc:09160013010220 .
+
+halalf:Coca_Cola_Soft_Drink food:containsIngredient halali:air_berkarbonasi,halali:gula,halali:konsentrat_coca_cola_termasuk_karamel .
+
+halalf:Coca_Cola_Soft_Drink food:ingredientsListAsText "air berkarbonasi", "gula", "konsentrat coca cola termasuk karamel" .
+

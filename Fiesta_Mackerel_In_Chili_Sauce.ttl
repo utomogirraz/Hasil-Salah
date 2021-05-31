@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Fiesta_Mackerel_In_Chili_Sauce a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "401";
+	rdfs:label "fiesta mackerel in chili sauce";
+	gr:hasManufacturer halalm:Pt_Gema_Ista_Raya .
+
+halalf:Fiesta_Mackerel_In_Chili_Sauce foodlirmm:certificate halalc:00030072900615 .
+
+halalf:Fiesta_Mackerel_In_Chili_Sauce food:containsIngredient halali:ikan_makarel,halali:pasta_tomat,halali:gula,halali:cabai_kecil,halali:penstabil_dipati_fosfat_terasetilasi,halali:bawang_putih,halali:garam,halali:cabai_besar,halali:penguat_rasa_mononatrium_glutamat,halali:pengatur_keasaman,halali:asam_asetat,halali:paprika,halali:merica .
+
+halalf:Fiesta_Mackerel_In_Chili_Sauce food:ingredientsListAsText "ikan makarel", "pasta tomat", "gula", "cabai kecil", "penstabil dipati fosfat terasetilasi", "bawang putih", "garam", "cabai besar", "penguat rasa mononatrium glutamat", "pengatur keasaman", "asam asetat", "paprika", "merica" .
+

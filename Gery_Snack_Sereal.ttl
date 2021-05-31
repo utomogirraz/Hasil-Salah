@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Gery_Snack_Sereal a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1110";
+	rdfs:label "gery snack sereal";
+	gr:hasManufacturer halalm:Muesly .
+
+halalf:Gery_Snack_Sereal foodlirmm:certificate halalc:13120025310920 .
+
+halalf:Gery_Snack_Sereal food:containsIngredient halali:gula,halali:minyak_nabati,halali:cokelat_bubuk,halali:tepung_terigu,halali:dekstrosa_monohidrat,halali:lemak_reroti,halali:antioksidan_bha,halali:susu_bubuk,halali:whey_bubuk,halali:tepung_tapioka,halali:pewarna_karamel_e,halali:pewarna_karamel_e_d,halali:pengemulsi_lesitin_kedelai,halali:garam,halali:perisa_artifisial_vanili .
+
+halalf:Gery_Snack_Sereal food:ingredientsListAsText "gula", "minyak nabati", "cokelat bubuk", "tepung terigu", "dekstrosa monohidrat", "lemak reroti", "antioksidan bha", "susu bubuk", "whey bubuk", "tepung tapioka", "pewarna karamel e", "pewarna karamel e d", "pengemulsi lesitin kedelai", "garam", "perisa artifisial vanili" .
+

@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Instant_Polybag a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1109";
+	rdfs:label ",cow fortigro susu bubuk instant polybag";
+	gr:hasManufacturer halalm:Pt_Milko_Beverage_Industry .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Instant_Polybag foodlirmm:certificate halalc:00040047600408 .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Instant_Polybag food:containsIngredient halali:padatan_susu,halali:susu_sapi,halali:susu_bubuk_skim,halali:lemak_susu,halali:maltodekstrin,halali:minyak_nabati,halali:mineral,halali:perisa_identik_alami,halali:pengemulsi_lesitin_kedelai,halali:premiks_vitamin .
+
+halalf:Cow_Fortigro_Susu_Bubuk_Instant_Polybag food:ingredientsListAsText "padatan susu", "susu sapi", "susu bubuk skim", "lemak susu", "maltodekstrin", "minyak nabati", "mineral", "perisa identik alami", "pengemulsi lesitin kedelai", "premiks vitamin" .
+

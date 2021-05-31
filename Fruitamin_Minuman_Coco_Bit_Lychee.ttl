@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Fruitamin_Minuman_Coco_Bit_Lychee a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1172";
+	rdfs:label "fruitamin minuman coco bit lychee";
+	gr:hasManufacturer halalm:Pt_Trans_Burger .
+
+halalf:Fruitamin_Minuman_Coco_Bit_Lychee foodlirmm:certificate halalc:00160074271015 .
+
+halalf:Fruitamin_Minuman_Coco_Bit_Lychee food:containsIngredient halali:air,halali:gula,halali:nata_de_coco,halali:sari_buah_apel,halali:leci,halali:penstabil,halali:kalsium_laktat,halali:natrium_karboksimetil_selulosa,halali:gom_gelan,halali:pengatur_keasaman,halali:asam_sitrat,halali:trinatrium_sitrat,halali:air_kelapa,halali:perisa_identik_alami_leci,halali:mangga .
+
+halalf:Fruitamin_Minuman_Coco_Bit_Lychee food:ingredientsListAsText "air", "gula", "nata de coco", "sari buah apel", "leci", "penstabil", "kalsium laktat", "natrium karboksimetil selulosa", "gom gelan", "pengatur keasaman", "asam sitrat", "trinatrium sitrat", "air kelapa", "perisa identik alami leci", "mangga" .
+

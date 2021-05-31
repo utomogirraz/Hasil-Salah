@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Cimory_Yoghurt_Drink_Low_Fat_Strawberry_Mango a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1121";
+	rdfs:label "cimory yoghurt drink low fat strawberry,mango";
+	gr:hasManufacturer halalm:Pt_Yummy_Food_Utama .
+
+halalf:Cimory_Yoghurt_Drink_Low_Fat_Strawberry_Mango foodlirmm:certificate halalc:00040025190603 .
+
+halalf:Cimory_Yoghurt_Drink_Low_Fat_Strawberry_Mango food:containsIngredient halali:susu_sapi,halali:air,halali:gula,halali:susu_skim_bubuk,halali:susu_bubuk_full_krim,halali:penstabil_nabati,halali:smoothie_stroberi,halali:puree_stroberi,halali:smoothie_mangga,halali:puree_mangga,halali:perisa_sintetik_stroberi,halali:perisa_alami_mangga,halali:kultur_streptococcus_thermophilus,halali:lactobacillus_delbrueckii_subsp_bulgaricus,halali:pewarna_alami,halali:karmin_ci_,halali:kurkumin_ci_no .
+
+halalf:Cimory_Yoghurt_Drink_Low_Fat_Strawberry_Mango food:ingredientsListAsText "susu sapi", "air", "gula", "susu skim bubuk", "susu bubuk full krim", "penstabil nabati", "smoothie stroberi", "puree stroberi", "smoothie mangga", "puree mangga", "perisa sintetik stroberi", "perisa alami mangga", "kultur streptococcus thermophilus", "lactobacillus delbrueckii subsp bulgaricus", "pewarna alami", "karmin ci ", "kurkumin ci no" .
+

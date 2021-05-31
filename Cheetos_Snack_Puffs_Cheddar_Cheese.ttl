@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Cheetos_Snack_Puffs_Cheddar_Cheese a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1083";
+	rdfs:label "cheetos snack puffs cheddar cheese";
+	gr:hasManufacturer halalm:Kdcmpul .
+
+halalf:Cheetos_Snack_Puffs_Cheddar_Cheese foodlirmm:certificate halalc:00040099811119 .
+
+halalf:Cheetos_Snack_Puffs_Cheddar_Cheese food:containsIngredient halali:tepung_jagung,halali:minyak_kelapa_sawit,halali:bumbu_rasa_keju,halali:gandum,halali:padatan_susu,halali:penguat_rasa_mononatrium_glutamat,halali:dinatrium_ribonukleotida,halali:padatan_keju,halali:tepung_jagung_termodifikasi,halali:pengemulsi_kalsium_karbonat,halali:perisa_identik_alami_keju,halali:susu,halali:gandum,halali:penguat_rasa_dinatrium_ribonukleotida .
+
+halalf:Cheetos_Snack_Puffs_Cheddar_Cheese food:ingredientsListAsText "tepung jagung", "minyak kelapa sawit", "bumbu rasa keju", "gandum", "padatan susu", "penguat rasa mononatrium glutamat", "dinatrium 'ribonukleotida", "padatan keju", "tepung jagung termodifikasi", "pengemulsi kalsium karbonat", "perisa identik alami keju", "susu", "gandum", "penguat rasa dinatrium 'ribonukleotida" .
+

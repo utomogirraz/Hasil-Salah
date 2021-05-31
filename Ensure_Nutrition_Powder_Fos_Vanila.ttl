@@ -1,0 +1,28 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix  owl: <http://www.w3.org/2002/07/owl#>.
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#>.
+@prefix  halalf: <http://halal.addi.is.its.ac.id/foodproducts/>.
+@prefix  halali: <http://halal.addi.is.its.ac.id/ingredients/>.
+@prefix  halalc: <http://halal.addi.is.its.ac.id/certificates/>.
+@prefix  halals: <http://halal.addi.is.its.ac.id/sources/>.
+@prefix  halalm: <http://halal.addi.is.its.ac.id/manufactures/>.
+@prefix  food: <http://purl.org/foodontology#> .
+@prefix  foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix  gr: <http://purl.org/goodrelations/v1#> . 
+@prefix  dbr: <http://dbpedia.org/resource/> .
+
+halalf:Ensure_Nutrition_Powder_Fos_Vanila a foodlirmm:FoodProduct;
+	a food:Food;
+	foodlirmm:code "1170";
+	rdfs:label "ensure nutrition powder fos vanila";
+	gr:hasManufacturer halalm:Pt_Sanghiang_Perkasa .
+
+halalf:Ensure_Nutrition_Powder_Fos_Vanila foodlirmm:certificate halalc:00040011611299 .
+
+halalf:Ensure_Nutrition_Powder_Fos_Vanila food:containsIngredient halali:pati_jagung_terhidrolisa,halali:natrium,halali:kalsium_kaseinat,halali:sukrosa,halali:minyak_bunga_matahari_tinggi_oleat,halali:mineral,halali:minyak_kedelai,halali:isolat_protein_kedelai,halali:fruktooligosakarida,halali:inulin,halali:isolat_protein_susu,halali:minyak_kanola,halali:perisa_artifisial_vanili,halali:vitamin .
+
+halalf:Ensure_Nutrition_Powder_Fos_Vanila food:ingredientsListAsText "pati jagung terhidrolisa", "natrium", "kalsium kaseinat", "sukrosa", "minyak bunga matahari tinggi oleat", "mineral", "minyak kedelai", "isolat protein kedelai", "frukto-oligosakarida", "inulin", "isolat protein susu", "minyak kanola", "perisa artifisial vanili", "vitamin" .
+
