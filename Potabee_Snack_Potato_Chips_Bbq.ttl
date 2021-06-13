@@ -24,5 +24,5 @@ halalf:Potabee_Snack_Potato_Chips_Bbq foodlirmm:certificate halalc:1510002604081
 
 halalf:Potabee_Snack_Potato_Chips_Bbq food:containsIngredient halali:kentang,halali:minyak_kelapa_sawit,halali:antioksidan_butil_hidrokinon_tersier,halali:perisa_identik_alami_sapi_panggang,halali:penguat_rasa,halali:mononatrium_glutamat,halali:dinatrium__ribonukleotida,halali:ekstrak_daging_sapi,halali:bubuk_lada_hitam .
 
-halalf:Potabee_Snack_Potato_Chips_Bbq food:ingredientsListAsText "kentang", "minyak kelapa sawit", "antioksidan butil hidrokinon tersier", "perisa identik alami sapi panggang", "penguat rasa", "mononatrium glutamat", "dinatrium '- ribonukleotida", "ekstrak daging sapi", "bubuk lada hitam" .
+halalf:Potabee_Snack_Potato_Chips_Bbq food:ingredientsListAsText "kentang", "minyak kelapa sawit", "antioksidan butil hidrokinon tersier", "perisa identik alami sapi panggang", "penguat rasa11", "mononatrium glutamat", "dinatrium '- ribonukleotida", "ekstrak daging sapi", "bubuk lada hitam" .
 
